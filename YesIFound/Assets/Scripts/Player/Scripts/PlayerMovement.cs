@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-    Vector2 movement;
     private Rigidbody2D rb;
-    bool isDashing, canDash;
+    bool isDashing, canDash, finishedDash;
 
     [SerializeField] PlayerAtribsSO m_AtribsSO;
 
@@ -15,35 +13,37 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         isDashing = false;
-        canDash = true;
+        canDash = finishedDash = true;
     }
 
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        if (canDash && movement.normalized != Vector2.zero && Input.GetKeyDown(m_AtribsSO.DashButton))
+        m_AtribsSO.movement.x = Input.GetAxisRaw("Horizontal");
+        m_AtribsSO.movement.y = Input.GetAxisRaw("Vertical");
+        if (canDash && m_AtribsSO.movement.normalized != Vector2.zero && Input.GetAxis(m_AtribsSO.DashButton) > 0)
         {
             StartCoroutine(DashControl());
         }
+
+        if (Input.GetAxis(m_AtribsSO.DashButton) == 0 && finishedDash) canDash = true;
     }
 
 
     private void FixedUpdate()
     {
         float speed = isDashing ? m_AtribsSO.DashSpeed : m_AtribsSO.WalkSpeed; 
-        rb.MovePosition(rb.position + movement.normalized * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + m_AtribsSO.movement.normalized * speed * Time.fixedDeltaTime);
     }
 
     private IEnumerator DashControl()
     {
         isDashing = true;
-        canDash = false;
+        canDash = finishedDash = false;
 
         yield return new WaitForSeconds(m_AtribsSO.DashDuration);
         isDashing = false;
         yield return new WaitForSeconds(m_AtribsSO.DashCooldown);
-        canDash = true;
+        finishedDash = true;
     }
 
 }

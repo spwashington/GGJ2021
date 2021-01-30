@@ -6,8 +6,8 @@ using UnityEngine;
 public class PlayerAtribsSO : ScriptableObject
 {
     [Header("Player Inputs")]
-    public KeyCode GetAnDropItemButton;
-    public KeyCode DashButton;
+    public string GetAnDropItemButton;
+    public string DashButton;
 
     [Header("Player Speed")]
     public float WalkSpeed;
@@ -15,4 +15,11 @@ public class PlayerAtribsSO : ScriptableObject
     public float DashSpeed;
     public float DashDuration;
     public float DashCooldown;
+
+    [Header("Player General Info")]
+    public string Gender = "Male";
+
+    [Header("Player InGame Info")]
+    public Vector2 movement;
+    public bool isHoldingItem;
 }
