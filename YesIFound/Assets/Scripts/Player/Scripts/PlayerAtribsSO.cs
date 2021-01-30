@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerAtribsSO : ScriptableObject
 {
     [Header("Player Inputs")]
-    public KeyCode GetAnDropElementsButton;
+    public KeyCode GetAnDropItemButton;
     public KeyCode DashButton;
 
     [Header("Player Speed")]

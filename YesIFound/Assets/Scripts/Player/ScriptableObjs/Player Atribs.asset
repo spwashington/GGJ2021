@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd5172d6b4c06d4fb40c69aeb1f506e, type: 3}
   m_Name: Player Atribs
   m_EditorClassIdentifier: 
-  UpButton: 
+  GetAnDropItemButton: 304
+  DashButton: 32
+  WalkSpeed: 5
+  DashSpeed: 30
+  DashDuration: 0.2
+  DashCooldown: 1
