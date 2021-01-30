@@ -1,0 +1,4092 @@
+fileFormatVersion: 2
+guid: 81198368814016a499f6b7f1444c0447
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8494637627259261307
+    second: wall_tile_0
+  - first:
+      213: -5759658900458002767
+    second: wall_tile_1
+  - first:
+      213: 8092941340553225699
+    second: wall_tile_2
+  - first:
+      213: 2907819614165804489
+    second: wall_tile_3
+  - first:
+      213: 1879395924757386933
+    second: wall_tile_4
+  - first:
+      213: 6805105115293561317
+    second: wall_tile_5
+  - first:
+      213: 93198489661891923
+    second: wall_tile_6
+  - first:
+      213: -4614397887185006546
+    second: wall_tile_7
+  - first:
+      213: -2968438011744108177
+    second: wall_tile_8
+  - first:
+      213: 7403336990734676134
+    second: wall_tile_9
+  - first:
+      213: -250707103147590371
+    second: wall_tile_10
+  - first:
+      213: 1184290713002968471
+    second: wall_tile_11
+  - first:
+      213: -6944262788124464464
+    second: wall_tile_12
+  - first:
+      213: -2592145603830821103
+    second: wall_tile_13
+  - first:
+      213: 2475695008579836169
+    second: wall_tile_14
+  - first:
+      213: 3175194048715523742
+    second: wall_tile_15
+  - first:
+      213: -1303260490556746312
+    second: wall_tile_16
+  - first:
+      213: -565761548516330353
+    second: wall_tile_17
+  - first:
+      213: 5412515917764670685
+    second: wall_tile_18
+  - first:
+      213: -7323438572727812878
+    second: wall_tile_19
+  - first:
+      213: 8671144941262342975
+    second: wall_tile_20
+  - first:
+      213: 399774179013178556
+    second: wall_tile_21
+  - first:
+      213: -3588396358311988550
+    second: wall_tile_22
+  - first:
+      213: 1499467865745739745
+    second: wall_tile_23
+  - first:
+      213: -3464580922447181835
+    second: wall_tile_24
+  - first:
+      213: -925647969333362499
+    second: wall_tile_25
+  - first:
+      213: 5892415656995700800
+    second: wall_tile_26
+  - first:
+      213: -797963124550614378
+    second: wall_tile_27
+  - first:
+      213: -4119425968807354054
+    second: wall_tile_28
+  - first:
+      213: 1718166734582792099
+    second: wall_tile_29
+  - first:
+      213: 3640738116145946554
+    second: wall_tile_30
+  - first:
+      213: -599751699117344701
+    second: wall_tile_31
+  - first:
+      213: 8420860493436958660
+    second: wall_tile_32
+  - first:
+      213: -2260017948810708104
+    second: wall_tile_33
+  - first:
+      213: 6730674778617502317
+    second: wall_tile_34
+  - first:
+      213: 1494295542665063567
+    second: wall_tile_35
+  - first:
+      213: 6335045791757475966
+    second: wall_tile_36
+  - first:
+      213: -3600591115137151459
+    second: wall_tile_37
+  - first:
+      213: -4898827648778450715
+    second: wall_tile_38
+  - first:
+      213: 552228399019722163
+    second: wall_tile_39
+  - first:
+      213: 813340658927596702
+    second: wall_tile_40
+  - first:
+      213: -8555538229255828472
+    second: wall_tile_41
+  - first:
+      213: 6143763847554689378
+    second: wall_tile_42
+  - first:
+      213: -5188216860389937410
+    second: wall_tile_43
+  - first:
+      213: 9009404667007495929
+    second: wall_tile_44
+  - first:
+      213: 3714815544160839112
+    second: wall_tile_45
+  - first:
+      213: -686281982318266096
+    second: wall_tile_46
+  - first:
+      213: -8301084042395956429
+    second: wall_tile_47
+  - first:
+      213: -8434663620046816108
+    second: wall_tile_48
+  - first:
+      213: 7223105502503729815
+    second: wall_tile_49
+  - first:
+      213: -8999541632473748522
+    second: wall_tile_50
+  - first:
+      213: 3174007737218165288
+    second: wall_tile_51
+  - first:
+      213: 8750773236946045851
+    second: wall_tile_52
+  - first:
+      213: -6562278205889844143
+    second: wall_tile_53
+  - first:
+      213: -6924097384403324887
+    second: wall_tile_54
+  - first:
+      213: -8311649312877225785
+    second: wall_tile_55
+  - first:
+      213: 4555702724869252882
+    second: wall_tile_56
+  - first:
+      213: 3583941020938688133
+    second: wall_tile_57
+  - first:
+      213: -5752502156050867920
+    second: wall_tile_58
+  - first:
+      213: 2724290556090309094
+    second: wall_tile_59
+  - first:
+      213: -4814399835190195158
+    second: wall_tile_60
+  - first:
+      213: 9027257496251661898
+    second: wall_tile_61
+  - first:
+      213: -6512278543195208092
+    second: wall_tile_62
+  - first:
+      213: -6774511206568105771
+    second: wall_tile_63
+  - first:
+      213: 6864926073291550132
+    second: wall_tile_64
+  - first:
+      213: 4411693738126917557
+    second: wall_tile_65
+  - first:
+      213: 2310898727606943666
+    second: wall_tile_66
+  - first:
+      213: -7098585870705739188
+    second: wall_tile_67
+  - first:
+      213: 7969040304717139108
+    second: wall_tile_68
+  - first:
+      213: -7817344075125564353
+    second: wall_tile_69
+  - first:
+      213: 7824231712765575628
+    second: wall_tile_70
+  - first:
+      213: 1807174419585967
+    second: wall_tile_71
+  - first:
+      213: 2200854284665756739
+    second: wall_tile_72
+  - first:
+      213: 7100006053250347103
+    second: wall_tile_73
+  - first:
+      213: -5398496943249972716
+    second: wall_tile_74
+  - first:
+      213: 315311076082560004
+    second: wall_tile_75
+  - first:
+      213: -2118045883436808312
+    second: wall_tile_76
+  - first:
+      213: -4900182643977765748
+    second: wall_tile_77
+  - first:
+      213: -3973601875899335162
+    second: wall_tile_78
+  - first:
+      213: -5568630727586212343
+    second: wall_tile_79
+  - first:
+      213: 5593824852890656303
+    second: wall_tile_80
+  - first:
+      213: -6563857294641745539
+    second: wall_tile_81
+  - first:
+      213: 5559946331227909415
+    second: wall_tile_82
+  - first:
+      213: 8710356956135672185
+    second: wall_tile_83
+  - first:
+      213: 3537380191760086609
+    second: wall_tile_84
+  - first:
+      213: 3380072265572768813
+    second: wall_tile_85
+  - first:
+      213: 185243093271454342
+    second: wall_tile_86
+  - first:
+      213: -6949851574526583356
+    second: wall_tile_87
+  - first:
+      213: -5657466909663361724
+    second: wall_tile_88
+  - first:
+      213: -269652586328084477
+    second: wall_tile_89
+  - first:
+      213: -2341443211993098957
+    second: wall_tile_90
+  - first:
+      213: 212198889755778987
+    second: wall_tile_91
+  - first:
+      213: 2313103435679291542
+    second: wall_tile_92
+  - first:
+      213: -206613175087816913
+    second: wall_tile_93
+  - first:
+      213: 944837962149042906
+    second: wall_tile_94
+  - first:
+      213: 1522675577482928003
+    second: wall_tile_95
+  - first:
+      213: 2963782742217812202
+    second: wall_tile_96
+  - first:
+      213: -7419373786533874135
+    second: wall_tile_97
+  - first:
+      213: -5902750659602853553
+    second: wall_tile_98
+  - first:
+      213: 8507968620963579973
+    second: wall_tile_99
+  - first:
+      213: -1891836044495421692
+    second: wall_tile_100
+  - first:
+      213: -899634258246521644
+    second: wall_tile_101
+  - first:
+      213: 1841372826350895704
+    second: wall_tile_102
+  - first:
+      213: 8200423504841504733
+    second: wall_tile_103
+  - first:
+      213: -7460864385935168773
+    second: wall_tile_104
+  - first:
+      213: 8730738314903632262
+    second: wall_tile_105
+  - first:
+      213: -7690146068940438880
+    second: wall_tile_106
+  - first:
+      213: 4124782380498070003
+    second: wall_tile_107
+  - first:
+      213: -4582287965789492592
+    second: wall_tile_108
+  - first:
+      213: 748480328324522759
+    second: wall_tile_109
+  - first:
+      213: 824250012572391528
+    second: wall_tile_110
+  - first:
+      213: 4778951318256014394
+    second: wall_tile_111
+  - first:
+      213: 8822940258650180592
+    second: wall_tile_112
+  - first:
+      213: 3829122922118543127
+    second: wall_tile_113
+  - first:
+      213: -6401052478395734039
+    second: wall_tile_114
+  - first:
+      213: 997588914202163502
+    second: wall_tile_115
+  - first:
+      213: -2775542387542146515
+    second: wall_tile_116
+  - first:
+      213: 7058345721509775877
+    second: wall_tile_117
+  - first:
+      213: -2959804091586366298
+    second: wall_tile_118
+  - first:
+      213: 4517997880379368551
+    second: wall_tile_119
+  - first:
+      213: 3252467632148306942
+    second: wall_tile_120
+  - first:
+      213: 3476558260763096137
+    second: wall_tile_121
+  - first:
+      213: 7663390234723092504
+    second: wall_tile_122
+  - first:
+      213: 7103547808810247717
+    second: wall_tile_123
+  - first:
+      213: 1613253236202332303
+    second: wall_tile_124
+  - first:
+      213: 5215124835824439075
+    second: wall_tile_125
+  - first:
+      213: 3255478927759870638
+    second: wall_tile_126
+  - first:
+      213: -1012559756651464288
+    second: wall_tile_127
+  - first:
+      213: -8038172595192206849
+    second: wall_tile_128
+  - first:
+      213: 6112046290683310595
+    second: wall_tile_129
+  - first:
+      213: -718367336337465500
+    second: wall_tile_130
+  - first:
+      213: 8782926995731451469
+    second: wall_tile_131
+  - first:
+      213: 6481510372633836714
+    second: wall_tile_132
+  - first:
+      213: -729958938206540655
+    second: wall_tile_133
+  - first:
+      213: -333829897301485026
+    second: wall_tile_134
+  - first:
+      213: -2119296703655625621
+    second: wall_tile_135
+  - first:
+      213: -1630014631159104477
+    second: wall_tile_136
+  - first:
+      213: -5731530736482931661
+    second: wall_tile_137
+  - first:
+      213: -6278503407347594391
+    second: wall_tile_138
+  - first:
+      213: -8503805624614088373
+    second: wall_tile_139
+  - first:
+      213: 2496172376647730666
+    second: wall_tile_140
+  - first:
+      213: -3733900582418923587
+    second: wall_tile_141
+  - first:
+      213: 7114561680966454802
+    second: wall_tile_142
+  - first:
+      213: -457466162950405457
+    second: wall_tile_143
+  - first:
+      213: -6888829999806650240
+    second: wall_tile_144
+  - first:
+      213: 274810141258964903
+    second: wall_tile_145
+  - first:
+      213: 8152655468862309973
+    second: wall_tile_146
+  - first:
+      213: -7499549313522678452
+    second: wall_tile_147
+  - first:
+      213: 9153343508257877708
+    second: wall_tile_148
+  - first:
+      213: -2369534197747721805
+    second: wall_tile_149
+  - first:
+      213: 7978082131189982069
+    second: wall_tile_150
+  - first:
+      213: -5823089304458651095
+    second: wall_tile_151
+  - first:
+      213: 3359374669423066406
+    second: wall_tile_152
+  - first:
+      213: 8050825179655041167
+    second: wall_tile_153
+  - first:
+      213: 6146648443170866910
+    second: wall_tile_154
+  - first:
+      213: -8329942860468278720
+    second: wall_tile_155
+  - first:
+      213: -1495874733731008145
+    second: wall_tile_156
+  - first:
+      213: -2848087243343737128
+    second: wall_tile_157
+  - first:
+      213: -7655334588848649838
+    second: wall_tile_158
+  - first:
+      213: -6270477589091624133
+    second: wall_tile_159
+  - first:
+      213: -6527257576500983853
+    second: wall_tile_160
+  - first:
+      213: 4966759654594176259
+    second: wall_tile_161
+  - first:
+      213: 8255593901821215612
+    second: wall_tile_162
+  - first:
+      213: 8675990692060131043
+    second: wall_tile_163
+  - first:
+      213: 3496828301947758419
+    second: wall_tile_164
+  - first:
+      213: -2463943556381559944
+    second: wall_tile_165
+  - first:
+      213: 4316569699170064658
+    second: wall_tile_166
+  - first:
+      213: 390496720768361520
+    second: wall_tile_167
+  - first:
+      213: 6883538047386325817
+    second: wall_tile_168
+  - first:
+      213: 4427340424344306194
+    second: wall_tile_169
+  - first:
+      213: 1827000544737612987
+    second: wall_tile_170
+  - first:
+      213: 430926035909828188
+    second: wall_tile_171
+  - first:
+      213: 612074260239297217
+    second: wall_tile_172
+  - first:
+      213: 5994545954169049657
+    second: wall_tile_173
+  - first:
+      213: -3341465844233506614
+    second: wall_tile_174
+  - first:
+      213: 3905956837809800995
+    second: wall_tile_175
+  - first:
+      213: -401294845024148079
+    second: wall_tile_176
+  - first:
+      213: -508550057849997545
+    second: wall_tile_177
+  - first:
+      213: -1921553779145155418
+    second: wall_tile_178
+  - first:
+      213: -3901913762603132847
+    second: wall_tile_179
+  - first:
+      213: 5565198444170379185
+    second: wall_tile_180
+  - first:
+      213: -4166301357802610201
+    second: wall_tile_181
+  - first:
+      213: 237759827727123884
+    second: wall_tile_182
+  - first:
+      213: 5247900946221090123
+    second: wall_tile_183
+  - first:
+      213: -8909006062006306533
+    second: wall_tile_184
+  - first:
+      213: -6339469275063627411
+    second: wall_tile_185
+  - first:
+      213: -8165675196253959345
+    second: wall_tile_186
+  - first:
+      213: 3155225618335484623
+    second: wall_tile_187
+  - first:
+      213: 1665651685021423686
+    second: wall_tile_188
+  - first:
+      213: -4939966743082086959
+    second: wall_tile_189
+  - first:
+      213: -7349469897378385898
+    second: wall_tile_190
+  - first:
+      213: 4557605662175377614
+    second: wall_tile_191
+  - first:
+      213: -6677010340963463166
+    second: wall_tile_192
+  - first:
+      213: -6802261102635855753
+    second: wall_tile_193
+  - first:
+      213: -611278157075142359
+    second: wall_tile_194
+  - first:
+      213: -1878083420390065183
+    second: wall_tile_195
+  - first:
+      213: 1370912623986899278
+    second: wall_tile_196
+  - first:
+      213: 4726523825093393122
+    second: wall_tile_197
+  - first:
+      213: -596416387605863958
+    second: wall_tile_198
+  - first:
+      213: 3591424806753814406
+    second: wall_tile_199
+  - first:
+      213: -5251134443966356949
+    second: wall_tile_200
+  - first:
+      213: 3672669273554519138
+    second: wall_tile_201
+  - first:
+      213: -1596264032047574065
+    second: wall_tile_202
+  - first:
+      213: 216181399825549056
+    second: wall_tile_203
+  - first:
+      213: 7128774089046917044
+    second: wall_tile_204
+  - first:
+      213: 7722734487943760467
+    second: wall_tile_205
+  - first:
+      213: -6602930682306250968
+    second: wall_tile_206
+  - first:
+      213: 6585726071730748569
+    second: wall_tile_207
+  - first:
+      213: -5947418437249990126
+    second: wall_tile_208
+  - first:
+      213: 7944548710738376010
+    second: wall_tile_209
+  - first:
+      213: -7854696806042292736
+    second: wall_tile_210
+  - first:
+      213: -1522196397832113293
+    second: wall_tile_211
+  - first:
+      213: -8459817517870062732
+    second: wall_tile_212
+  - first:
+      213: -3472854769531764489
+    second: wall_tile_213
+  - first:
+      213: -7993369490481812248
+    second: wall_tile_214
+  - first:
+      213: 8528132585455721563
+    second: wall_tile_215
+  - first:
+      213: 3561715030865452421
+    second: wall_tile_216
+  - first:
+      213: -1759834214981461531
+    second: wall_tile_217
+  - first:
+      213: 5287948030713646140
+    second: wall_tile_218
+  - first:
+      213: -7781013459428769851
+    second: wall_tile_219
+  - first:
+      213: -8176985859403719120
+    second: wall_tile_220
+  - first:
+      213: 3735425769530495577
+    second: wall_tile_221
+  - first:
+      213: -9214194833604313747
+    second: wall_tile_222
+  - first:
+      213: -6790411491041144120
+    second: wall_tile_223
+  - first:
+      213: -2503972243094270703
+    second: wall_tile_224
+  - first:
+      213: -6644214818692420520
+    second: wall_tile_225
+  - first:
+      213: -9020121367105753661
+    second: wall_tile_226
+  - first:
+      213: 6103766949909285484
+    second: wall_tile_227
+  - first:
+      213: 5240659632989907043
+    second: wall_tile_228
+  - first:
+      213: 4853951092056202999
+    second: wall_tile_229
+  - first:
+      213: 8208798116311830216
+    second: wall_tile_230
+  - first:
+      213: 2689791911104383694
+    second: wall_tile_231
+  - first:
+      213: 5810363765886705812
+    second: wall_tile_232
+  - first:
+      213: 8817331965157834617
+    second: wall_tile_233
+  - first:
+      213: -3254091395406023518
+    second: wall_tile_234
+  - first:
+      213: 1606921379603690600
+    second: wall_tile_235
+  - first:
+      213: -4501641088206330705
+    second: wall_tile_236
+  - first:
+      213: -2212091396707689510
+    second: wall_tile_237
+  - first:
+      213: -171025961312007983
+    second: wall_tile_238
+  - first:
+      213: -6195248151303014535
+    second: wall_tile_239
+  - first:
+      213: 6630439913389393513
+    second: wall_tile_240
+  - first:
+      213: -8635325268826073553
+    second: wall_tile_241
+  - first:
+      213: -2517963838122889150
+    second: wall_tile_242
+  - first:
+      213: 603029801318566721
+    second: wall_tile_243
+  - first:
+      213: 2492257837428020468
+    second: wall_tile_244
+  - first:
+      213: 58223137200381999
+    second: wall_tile_245
+  - first:
+      213: -256831170425569799
+    second: wall_tile_246
+  - first:
+      213: 8856866590143492776
+    second: wall_tile_247
+  - first:
+      213: -7266412851365952351
+    second: wall_tile_248
+  - first:
+      213: 2416132892000081914
+    second: wall_tile_249
+  - first:
+      213: 3569131565218312159
+    second: wall_tile_250
+  - first:
+      213: -6298824519056655080
+    second: wall_tile_251
+  - first:
+      213: 2809013459930171711
+    second: wall_tile_252
+  - first:
+      213: 2400128036865119286
+    second: wall_tile_253
+  - first:
+      213: 4539794755508408045
+    second: wall_tile_254
+  - first:
+      213: 8867483479467164515
+    second: wall_tile_255
+  - first:
+      213: 1098606867418647004
+    second: wall_tile_256
+  - first:
+      213: 2904141522920841705
+    second: wall_tile_257
+  - first:
+      213: 6582570866727039080
+    second: wall_tile_258
+  - first:
+      213: 3278161961070533806
+    second: wall_tile_259
+  - first:
+      213: -6735669232582532958
+    second: wall_tile_260
+  - first:
+      213: 660326163419649704
+    second: wall_tile_261
+  - first:
+      213: -5383715604429836292
+    second: wall_tile_262
+  - first:
+      213: 830551699641576792
+    second: wall_tile_263
+  - first:
+      213: 7387318264676911613
+    second: wall_tile_264
+  - first:
+      213: 617515108780709894
+    second: wall_tile_265
+  - first:
+      213: -2755163014177752675
+    second: wall_tile_266
+  - first:
+      213: -1514195773781872115
+    second: wall_tile_267
+  - first:
+      213: -1275992569781079525
+    second: wall_tile_268
+  - first:
+      213: 1868990900768033618
+    second: wall_tile_269
+  - first:
+      213: -7519298467688160543
+    second: wall_tile_270
+  - first:
+      213: -2097969715245417361
+    second: wall_tile_271
+  - first:
+      213: -2093139357480060961
+    second: wall_tile_272
+  - first:
+      213: -3471205038127531
+    second: wall_tile_273
+  - first:
+      213: -1158923527075443394
+    second: wall_tile_274
+  - first:
+      213: 1357632173261549777
+    second: wall_tile_275
+  - first:
+      213: -493873155695655473
+    second: wall_tile_276
+  - first:
+      213: -6505363020945010066
+    second: wall_tile_277
+  - first:
+      213: -2035596808181691753
+    second: wall_tile_278
+  - first:
+      213: 5046102282663402382
+    second: wall_tile_279
+  - first:
+      213: 3881401850859457412
+    second: wall_tile_280
+  - first:
+      213: -332694688657050914
+    second: wall_tile_281
+  - first:
+      213: -4486375187092153820
+    second: wall_tile_282
+  - first:
+      213: 6176429511607818782
+    second: wall_tile_283
+  - first:
+      213: 3366079262920691362
+    second: wall_tile_284
+  - first:
+      213: -643383042067123717
+    second: wall_tile_285
+  - first:
+      213: -8514040503841458021
+    second: wall_tile_286
+  - first:
+      213: 3682314479852871612
+    second: wall_tile_287
+  - first:
+      213: -8876050570820882625
+    second: wall_tile_288
+  - first:
+      213: 6366734026380047158
+    second: wall_tile_289
+  - first:
+      213: 3739743599828541567
+    second: wall_tile_290
+  - first:
+      213: -8430432201324478428
+    second: wall_tile_291
+  - first:
+      213: -6655413802360842355
+    second: wall_tile_292
+  - first:
+      213: -5298208272064311547
+    second: wall_tile_293
+  - first:
+      213: -7706585749517640726
+    second: wall_tile_294
+  - first:
+      213: -483354943990887625
+    second: wall_tile_295
+  - first:
+      213: 8255740116801566500
+    second: wall_tile_296
+  - first:
+      213: -2511863764074258238
+    second: wall_tile_297
+  - first:
+      213: 8645179707084359270
+    second: wall_tile_298
+  - first:
+      213: 4832355979283674322
+    second: wall_tile_299
+  - first:
+      213: 5362505567955696961
+    second: wall_tile_300
+  - first:
+      213: -9155066261343990125
+    second: wall_tile_301
+  - first:
+      213: 4571656061891724322
+    second: wall_tile_302
+  - first:
+      213: 6171940348637267902
+    second: wall_tile_303
+  - first:
+      213: -5344719947741154862
+    second: wall_tile_304
+  - first:
+      213: 6242702013616070041
+    second: wall_tile_305
+  - first:
+      213: 1477629199946136385
+    second: wall_tile_306
+  - first:
+      213: 237783452210382732
+    second: wall_tile_307
+  - first:
+      213: 1167456709894818093
+    second: wall_tile_308
+  - first:
+      213: -7820033033232012469
+    second: wall_tile_309
+  - first:
+      213: -6158908078776831023
+    second: wall_tile_310
+  - first:
+      213: 6984013530680945300
+    second: wall_tile_311
+  - first:
+      213: -5015984177156713774
+    second: wall_tile_312
+  - first:
+      213: 5342600394062580576
+    second: wall_tile_313
+  - first:
+      213: -4288081360573065498
+    second: wall_tile_314
+  - first:
+      213: 5475985157630549543
+    second: wall_tile_315
+  - first:
+      213: -4106337416276654999
+    second: wall_tile_316
+  - first:
+      213: -496821642350495487
+    second: wall_tile_317
+  - first:
+      213: 1940089770395642824
+    second: wall_tile_318
+  - first:
+      213: 6574092169874068284
+    second: wall_tile_319
+  - first:
+      213: 6316197169152082258
+    second: wall_tile_320
+  - first:
+      213: -6524261451563333832
+    second: wall_tile_321
+  - first:
+      213: 788822017411998811
+    second: wall_tile_322
+  - first:
+      213: 7446430757777680733
+    second: wall_tile_323
+  - first:
+      213: -478902259560354224
+    second: wall_tile_324
+  - first:
+      213: 867725567031034049
+    second: wall_tile_325
+  - first:
+      213: 4651729007274615168
+    second: wall_tile_326
+  - first:
+      213: -8919208978643155936
+    second: wall_tile_327
+  - first:
+      213: -9044602495984577045
+    second: wall_tile_328
+  - first:
+      213: 8940424755299129239
+    second: wall_tile_329
+  - first:
+      213: -8519627620014612194
+    second: wall_tile_330
+  - first:
+      213: -8540953846174306380
+    second: wall_tile_331
+  - first:
+      213: 8369327822963697901
+    second: wall_tile_332
+  - first:
+      213: 8088624951626507035
+    second: wall_tile_333
+  - first:
+      213: 4014509442212359791
+    second: wall_tile_334
+  - first:
+      213: 5964064138689026083
+    second: wall_tile_335
+  - first:
+      213: 8730379449792054386
+    second: wall_tile_336
+  - first:
+      213: -6846104535380018870
+    second: wall_tile_337
+  - first:
+      213: -793049029220261226
+    second: wall_tile_338
+  - first:
+      213: 1495211083806636284
+    second: wall_tile_339
+  - first:
+      213: 5691017296936818059
+    second: wall_tile_340
+  - first:
+      213: -6594335746798090473
+    second: wall_tile_341
+  - first:
+      213: 6427594642764894341
+    second: wall_tile_342
+  - first:
+      213: -4796607072090851127
+    second: wall_tile_343
+  - first:
+      213: 1719766456700995978
+    second: wall_tile_344
+  - first:
+      213: 8256883126242769357
+    second: wall_tile_345
+  - first:
+      213: 8916308111066974994
+    second: wall_tile_346
+  - first:
+      213: -8174109661126405406
+    second: wall_tile_347
+  - first:
+      213: -9065668377833425099
+    second: wall_tile_348
+  - first:
+      213: 8439207662230715373
+    second: wall_tile_349
+  - first:
+      213: -6139946839652304731
+    second: wall_tile_350
+  - first:
+      213: 4224760806101378339
+    second: wall_tile_351
+  - first:
+      213: 8929618333752642931
+    second: wall_tile_352
+  - first:
+      213: 4519096780879505570
+    second: wall_tile_353
+  - first:
+      213: -726974787440461742
+    second: wall_tile_354
+  - first:
+      213: 7869272390114884048
+    second: wall_tile_355
+  - first:
+      213: 577468994055564965
+    second: wall_tile_356
+  - first:
+      213: 3175138720000941381
+    second: wall_tile_357
+  - first:
+      213: -314962828492146373
+    second: wall_tile_358
+  - first:
+      213: 7804442159839970644
+    second: wall_tile_359
+  - first:
+      213: 7925855234143528978
+    second: wall_tile_360
+  - first:
+      213: -5844507089850166286
+    second: wall_tile_361
+  - first:
+      213: 141642667222115448
+    second: wall_tile_362
+  - first:
+      213: -5747257432701418846
+    second: wall_tile_363
+  - first:
+      213: 4735786907825553783
+    second: wall_tile_364
+  - first:
+      213: 6739377229526827662
+    second: wall_tile_365
+  - first:
+      213: 5854539208407828646
+    second: wall_tile_366
+  - first:
+      213: -7281851749545723052
+    second: wall_tile_367
+  - first:
+      213: 1139461316606957335
+    second: wall_tile_368
+  - first:
+      213: -4931799802616786244
+    second: wall_tile_369
+  - first:
+      213: 786848736972333411
+    second: wall_tile_370
+  - first:
+      213: -1314499808695404064
+    second: wall_tile_371
+  - first:
+      213: 8969095041817019291
+    second: wall_tile_372
+  - first:
+      213: -2917943793060644981
+    second: wall_tile_373
+  - first:
+      213: -8697832438849333729
+    second: wall_tile_374
+  - first:
+      213: -6641128864564213667
+    second: wall_tile_375
+  - first:
+      213: 5233807653481669338
+    second: wall_tile_376
+  - first:
+      213: -7855260743436668390
+    second: wall_tile_377
+  - first:
+      213: 7179787205630860401
+    second: wall_tile_378
+  - first:
+      213: 2972897727758039458
+    second: wall_tile_379
+  - first:
+      213: -7215938051679325363
+    second: wall_tile_380
+  - first:
+      213: 3133726325389834893
+    second: wall_tile_381
+  - first:
+      213: -1781036481964866903
+    second: wall_tile_382
+  - first:
+      213: -7348968490970988772
+    second: wall_tile_383
+  - first:
+      213: 3826625736026095990
+    second: wall_tile_384
+  - first:
+      213: 1031620527096924928
+    second: wall_tile_385
+  - first:
+      213: 8823840895309671257
+    second: wall_tile_386
+  - first:
+      213: 7678644150474935293
+    second: wall_tile_387
+  - first:
+      213: -549877314688881319
+    second: wall_tile_388
+  - first:
+      213: -3139666214674552040
+    second: wall_tile_389
+  - first:
+      213: -1608352767609308363
+    second: wall_tile_390
+  - first:
+      213: 4457100359025224561
+    second: wall_tile_391
+  - first:
+      213: -4760156148281305500
+    second: wall_tile_392
+  - first:
+      213: 6219502625501643650
+    second: wall_tile_393
+  - first:
+      213: -5174216245649853718
+    second: wall_tile_394
+  - first:
+      213: -8596765892041163967
+    second: wall_tile_395
+  - first:
+      213: -2098820888234083958
+    second: wall_tile_396
+  - first:
+      213: -4306251861877500954
+    second: wall_tile_397
+  - first:
+      213: 7223250407919073900
+    second: wall_tile_398
+  - first:
+      213: 2003762114523878442
+    second: wall_tile_399
+  - first:
+      213: 4290896178734712027
+    second: wall_tile_400
+  - first:
+      213: -5302996552847216349
+    second: wall_tile_401
+  - first:
+      213: -9038542019107006653
+    second: wall_tile_402
+  - first:
+      213: -333508368470681770
+    second: wall_tile_403
+  - first:
+      213: 1887910365185390608
+    second: wall_tile_404
+  - first:
+      213: 5650275846762555181
+    second: wall_tile_405
+  - first:
+      213: 780955270184208901
+    second: wall_tile_406
+  - first:
+      213: -6166302051698839719
+    second: wall_tile_407
+  - first:
+      213: 4378128707345921137
+    second: wall_tile_408
+  - first:
+      213: 2055609083168023769
+    second: wall_tile_409
+  - first:
+      213: -2973416217864210541
+    second: wall_tile_410
+  - first:
+      213: 2006524649821443305
+    second: wall_tile_411
+  - first:
+      213: -6830965572539324941
+    second: wall_tile_412
+  - first:
+      213: -5690220291397622899
+    second: wall_tile_413
+  - first:
+      213: 7468566387984374773
+    second: wall_tile_414
+  - first:
+      213: -2264738242126269544
+    second: wall_tile_415
+  - first:
+      213: -5934774798065546878
+    second: wall_tile_416
+  - first:
+      213: 2432935473462408246
+    second: wall_tile_417
+  - first:
+      213: 1578576535687509923
+    second: wall_tile_418
+  - first:
+      213: 4802929064569482732
+    second: wall_tile_419
+  - first:
+      213: -2860249345785009748
+    second: wall_tile_420
+  - first:
+      213: 2183240018883543300
+    second: wall_tile_421
+  - first:
+      213: 2191379259285922986
+    second: wall_tile_422
+  - first:
+      213: 4943909542934350444
+    second: wall_tile_423
+  - first:
+      213: -214452519770007616
+    second: wall_tile_424
+  - first:
+      213: 299425154124911106
+    second: wall_tile_425
+  - first:
+      213: 106362281454500065
+    second: wall_tile_426
+  - first:
+      213: -7922048157537509268
+    second: wall_tile_427
+  - first:
+      213: 2506684478901558658
+    second: wall_tile_428
+  - first:
+      213: -3908102087120653917
+    second: wall_tile_429
+  - first:
+      213: -8555921481302190839
+    second: wall_tile_430
+  - first:
+      213: 3662238207854681385
+    second: wall_tile_431
+  - first:
+      213: -2306285587537746288
+    second: wall_tile_432
+  - first:
+      213: -6330381944596612725
+    second: wall_tile_433
+  - first:
+      213: 3027420314644171963
+    second: wall_tile_434
+  - first:
+      213: -5793121309733669829
+    second: wall_tile_435
+  - first:
+      213: -1703715643650805557
+    second: wall_tile_436
+  - first:
+      213: -972934688445516032
+    second: wall_tile_437
+  - first:
+      213: 479569593802740696
+    second: wall_tile_438
+  - first:
+      213: -7909660403801128025
+    second: wall_tile_439
+  - first:
+      213: -2279159872114376372
+    second: wall_tile_440
+  - first:
+      213: 5641833023753510679
+    second: wall_tile_441
+  - first:
+      213: 697906192594297094
+    second: wall_tile_442
+  - first:
+      213: 6127784832746688919
+    second: wall_tile_443
+  - first:
+      213: 4966045545500523080
+    second: wall_tile_444
+  - first:
+      213: -5408886845885058582
+    second: wall_tile_445
+  - first:
+      213: 4963118182936369836
+    second: wall_tile_446
+  - first:
+      213: 8502146599132115247
+    second: wall_tile_447
+  - first:
+      213: -2632940278895193465
+    second: wall_tile_448
+  - first:
+      213: 2818646249618911194
+    second: wall_tile_449
+  - first:
+      213: 9201150899896759426
+    second: wall_tile_450
+  - first:
+      213: 3002697463652009213
+    second: wall_tile_451
+  - first:
+      213: 4895195724493653529
+    second: wall_tile_452
+  - first:
+      213: 8751503088198593124
+    second: wall_tile_453
+  - first:
+      213: 4409897127635965167
+    second: wall_tile_454
+  - first:
+      213: -7287615596262486650
+    second: wall_tile_455
+  - first:
+      213: 8881127431659578180
+    second: wall_tile_456
+  - first:
+      213: 7066931887513951034
+    second: wall_tile_457
+  - first:
+      213: -5603857512008181541
+    second: wall_tile_458
+  - first:
+      213: 3782915269508462909
+    second: wall_tile_459
+  - first:
+      213: 8801010941248647046
+    second: wall_tile_460
+  - first:
+      213: -7033776579706990984
+    second: wall_tile_461
+  - first:
+      213: -1951655168040372966
+    second: wall_tile_462
+  - first:
+      213: -7220911888008610721
+    second: wall_tile_463
+  - first:
+      213: -471452682228664800
+    second: wall_tile_464
+  - first:
+      213: 947789520071480573
+    second: wall_tile_465
+  - first:
+      213: 3915934785346242615
+    second: wall_tile_466
+  - first:
+      213: 7415720136882035933
+    second: wall_tile_467
+  - first:
+      213: 3614868382544095117
+    second: wall_tile_468
+  - first:
+      213: -647845472702317825
+    second: wall_tile_469
+  - first:
+      213: 1043514150561895663
+    second: wall_tile_470
+  - first:
+      213: 600955952605336858
+    second: wall_tile_471
+  - first:
+      213: -3764764901798178078
+    second: wall_tile_472
+  - first:
+      213: -3285602336447651842
+    second: wall_tile_473
+  - first:
+      213: -5986145235216282825
+    second: wall_tile_474
+  - first:
+      213: 8129442153932861030
+    second: wall_tile_475
+  - first:
+      213: -7659898278388393050
+    second: wall_tile_476
+  - first:
+      213: 8540006925066510658
+    second: wall_tile_477
+  - first:
+      213: -8929477319532502105
+    second: wall_tile_478
+  - first:
+      213: -8764940975732661940
+    second: wall_tile_479
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wall_tile_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71947c5ae303e570800000000000000
+      internalID: 8494637627259261307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6a8cafeb49110b0800000000000000
+      internalID: -5759658900458002767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5afbf5547ef4070800000000000000
+      internalID: 8092941340553225699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c524456886aa5820800000000000000
+      internalID: 2907819614165804489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b61b77d2a4f41a10800000000000000
+      internalID: 1879395924757386933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e134402c07907e50800000000000000
+      internalID: 6805105115293561317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35566e5588b1b4100800000000000000
+      internalID: 93198489661891923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20560ad19d56ffb0800000000000000
+      internalID: -4614397887185006546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61c9341b5dfdc6d0800000000000000
+      internalID: -2968438011744108177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0ff3db4cfedb660800000000000000
+      internalID: 7403336990734676134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d783ec73f458cf0800000000000000
+      internalID: -250707103147590371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795065bf0227f6010800000000000000
+      internalID: 1184290713002968471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0baa0e659c501af90800000000000000
+      internalID: -6944262788124464464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fc29d9e49d60cd0800000000000000
+      internalID: -2592145603830821103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909db965e7f6b5220800000000000000
+      internalID: 2475695008579836169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e968f961a2e801c20800000000000000
+      internalID: 3175194048715523742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b550922d73e9ede0800000000000000
+      internalID: -1303260490556746312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_17
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84fb118ed20628f0800000000000000
+      internalID: -565761548516330353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4b28bec8e1d1b40800000000000000
+      internalID: 5412515917764670685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc3a2a5b6bed5a90800000000000000
+      internalID: -7323438572727812878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b0ed3e168165870800000000000000
+      internalID: 8671144941262342975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_21
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4347a6f784c8500800000000000000
+      internalID: 399774179013178556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab232853684733ec0800000000000000
+      internalID: -3588396358311988550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_23
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef43e1541e2fc410800000000000000
+      internalID: 1499467865745739745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7c0f5d1065befc0800000000000000
+      internalID: -3464580922447181835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_25
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0c2d083107723f0800000000000000
+      internalID: -925647969333362499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040cd2812d016c150800000000000000
+      internalID: 5892415656995700800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_27
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692cc4914c01de4f0800000000000000
+      internalID: -797963124550614378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31e7b238ebd4d6c0800000000000000
+      internalID: -4119425968807354054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_29
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af33b7ba8728d710800000000000000
+      internalID: 1718166734582792099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf9a15f600868230800000000000000
+      internalID: 3640738116145946554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_31
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3487cacd1014da7f0800000000000000
+      internalID: -599751699117344701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c73e6ec008ecd470800000000000000
+      internalID: 8420860493436958660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_33
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b712f46adc2a0e0800000000000000
+      internalID: -2260017948810708104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a5d2eec09286d50800000000000000
+      internalID: 6730674778617502317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_35
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c200201edccb410800000000000000
+      internalID: 1494295542665063567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70a985459a9ae750800000000000000
+      internalID: 6335045791757475966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_37
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e82d02571280ec0800000000000000
+      internalID: -3600591115137151459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8c2b2653ed30cb0800000000000000
+      internalID: -4898827648778450715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b504769dc8e9a700800000000000000
+      internalID: 552228399019722163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94f2c02501994b00800000000000000
+      internalID: 813340658927596702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_41
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c8ee64f4f944980800000000000000
+      internalID: -8555538229255828472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_42
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26962651ba8034550800000000000000
+      internalID: 6143763847554689378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_43
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efee3caf040cff7b0800000000000000
+      internalID: -5188216860389937410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe6abe8fc5d70d70800000000000000
+      internalID: 9009404667007495929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_45
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c56ec33e0dad8330800000000000000
+      internalID: 3714815544160839112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_46
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0193b245c26d976f0800000000000000
+      internalID: -686281982318266096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_47
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b43526b00accc80800000000000000
+      internalID: -8301084042395956429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_48
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cf237502e02fa80800000000000000
+      internalID: -8434663620046816108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_49
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a77e35f20ad3460800000000000000
+      internalID: 7223105502503729815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db201f11943b1380800000000000000
+      internalID: -8999541632473748522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_51
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82aea3b68375c0c20800000000000000
+      internalID: 3174007737218165288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_52
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b0a2a35edf07970800000000000000
+      internalID: 8750773236946045851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_53
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ce5ac7dba1ee4a0800000000000000
+      internalID: -6562278205889844143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_54
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920bd644d1aa8ef90800000000000000
+      internalID: -6924097384403324887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_55
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c85558acf617ac80800000000000000
+      internalID: -8311649312877225785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_56
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2176c1abd7b193f30800000000000000
+      internalID: 4555702724869252882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_57
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5865009be57bcb130800000000000000
+      internalID: 3583941020938688133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_58
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0395be264c10b20b0800000000000000
+      internalID: -5752502156050867920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_59
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9d6bca3df9ec520800000000000000
+      internalID: 2724290556090309094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c0ac09bd0df2db0800000000000000
+      internalID: -4814399835190195158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_61
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4eff084dd2474d70800000000000000
+      internalID: 9027257496251661898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46683722b2dbf95a0800000000000000
+      internalID: -6512278543195208092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_63
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8ea9553f91cf1a0800000000000000
+      internalID: -6774511206568105771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd2cd744ed154f50800000000000000
+      internalID: 6864926073291550132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_65
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfbed6a41c793d30800000000000000
+      internalID: 4411693738126917557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_66
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bff9ea2626f11020800000000000000
+      internalID: 2310898727606943666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_67
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a3af0b2c1cc7d90800000000000000
+      internalID: -7098585870705739188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac8f637fe7b79e60800000000000000
+      internalID: 7969040304717139108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_69
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cd2235bf6338390800000000000000
+      internalID: -7817344075125564353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc10db7c941459c60800000000000000
+      internalID: 7824231712765575628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_71
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab93559d9b660000800000000000000
+      internalID: 1807174419585967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_72
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c16efaf410b8e10800000000000000
+      internalID: 2200854284665756739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_73
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f503c1353e9488260800000000000000
+      internalID: 7100006053250347103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_74
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412ad80f1afa415b0800000000000000
+      internalID: -5398496943249972716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_75
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ca5abc0c5306400800000000000000
+      internalID: 315311076082560004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_76
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88745cbad703b92e0800000000000000
+      internalID: -2118045883436808312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_77
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cbb2bf8dd0ffbb0800000000000000
+      internalID: -4900182643977765748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_78
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60eb13c952eead8c0800000000000000
+      internalID: -3973601875899335162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_79
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90616ec6bdf38b2b0800000000000000
+      internalID: -5568630727586212343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e9c4cf01241ad40800000000000000
+      internalID: 5593824852890656303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_81
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71b58c319e78e4a0800000000000000
+      internalID: -6563857294641745539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_82
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d631bfab5e82d40800000000000000
+      internalID: 5559946331227909415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_83
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979c15d808761e870800000000000000
+      internalID: 8710356956135672185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_84
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156fc55ea8c471130800000000000000
+      internalID: 3537380191760086609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_85
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c5d9031dd68ee20800000000000000
+      internalID: 3380072265572768813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_86
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6822a83ac9d129200800000000000000
+      internalID: 185243093271454342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_87
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd57aa90da2d8f90800000000000000
+      internalID: -6949851574526583356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4450df8f1d3ac71b0800000000000000
+      internalID: -5657466909663361724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_89
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3003623c660024cf0800000000000000
+      internalID: -269652586328084477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335d66fddc5818fd0800000000000000
+      internalID: -2341443211993098957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_91
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf10a514c1e1f200800000000000000
+      internalID: 212198889755778987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_92
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6985664c15bc91020800000000000000
+      internalID: 2313103435679291542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_93
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f99f47966f12df0800000000000000
+      internalID: -206613175087816913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_94
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada9230ee1dbc1d00800000000000000
+      internalID: 944837962149042906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_95
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f5808ce51a12510800000000000000
+      internalID: 1522675577482928003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_96
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8635583b8712920800000000000000
+      internalID: 2963782742217812202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_97
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926bdc5c9d6190990800000000000000
+      internalID: -7419373786533874135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f415ba89c87351ea0800000000000000
+      internalID: -5902750659602853553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_99
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54844b43260621670800000000000000
+      internalID: 8507968620963579973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ff1921429deb5e0800000000000000
+      internalID: -1891836044495421692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_101
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dca179986bd383f0800000000000000
+      internalID: -899634258246521644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_102
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852c3bd54dedd8910800000000000000
+      internalID: 1841372826350895704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_103
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd777dddab1cdc170800000000000000
+      internalID: 8200423504841504733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_104
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfaa8fece5fa57890800000000000000
+      internalID: -7460864385935168773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_105
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68939be6d30d92970800000000000000
+      internalID: 8730738314903632262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_106
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a240f9f4ec174590800000000000000
+      internalID: -7690146068940438880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_107
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9a06598bb2e3930800000000000000
+      internalID: 4124782380498070003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_108
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ae1948f517860c0800000000000000
+      internalID: -4582287965789492592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_109
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703a62b94e2236a00800000000000000
+      internalID: 748480328324522759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8681d75f403507b00800000000000000
+      internalID: 824250012572391528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_111
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34d88b67ee325240800000000000000
+      internalID: 4778951318256014394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_112
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb46575b61617a70800000000000000
+      internalID: 8822940258650180592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_113
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7177e269207c32530800000000000000
+      internalID: 3829122922118543127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_114
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7a6946fa4ea27a0800000000000000
+      internalID: -6401052478395734039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_115
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2933eef4d528dd00800000000000000
+      internalID: 997588914202163502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_116
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22c28b67ea4b79d0800000000000000
+      internalID: -2775542387542146515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_117
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a0d78790844f160800000000000000
+      internalID: 7058345721509775877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_118
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a43f344cd9ace6d0800000000000000
+      internalID: -2959804091586366298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_tile_119
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764eaf3822723be30800000000000000
+      internalID: 4517997880379368551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
