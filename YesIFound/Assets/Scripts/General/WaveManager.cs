@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class WaveManager : MonoBehaviour
@@ -5,11 +6,15 @@ public class WaveManager : MonoBehaviour
     [SerializeField] private GameObject m_NpcPrefab;
     [SerializeField] private Transform[] m_SpawnNpc;
     [SerializeField] private GameObject[] m_ActiveNpcPlace;
+    private int m_WaveCount;
+    //private List<ObjectItem> m_ObjectsInStorage;
     private bool m_StartGame;
     private bool m_SinglePlayer;
 
     private void Start()
     {
+        m_WaveCount = 1;
+        //m_ObjectsInStorage = new List<ObjectItem>();
         m_SinglePlayer = true;
         m_StartGame = false;
     }
@@ -48,6 +53,6 @@ public class WaveManager : MonoBehaviour
     public void DragRequest(int _NpcIndex, string _Item)
     {
         if (m_ActiveNpcPlace[_NpcIndex].transform.childCount > 0)
-            m_ActiveNpcPlace[_NpcIndex].transform.GetChild(0).GetComponent<Npc>().TakeItem();
+            m_ActiveNpcPlace[_NpcIndex].transform.GetChild(0).GetComponent<Npc>().TakeItem(_Item);
     }
 }
