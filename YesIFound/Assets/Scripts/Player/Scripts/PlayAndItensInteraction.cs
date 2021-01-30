@@ -11,20 +11,23 @@ public class PlayAndItensInteraction : MonoBehaviour
 
     ItemGameplay HoldedItem;
     ItemGameplay OnAreaItem;
-    bool canHighlighAnItem;
+    bool canHighlighAnItem, CanGetOrDrop;
 
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         HoldedItem = OnAreaItem = null;
-        canHighlighAnItem = true;
+        canHighlighAnItem = CanGetOrDrop = true;
+        m_AtribsSO.isHoldingItem = false;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(m_AtribsSO.GetAnDropItemButton))
+        if (Input.GetAxis(m_AtribsSO.GetAnDropItemButton) > 0 && CanGetOrDrop)
         {
+           CanGetOrDrop = false;
+            StartCoroutine(Cooldown());
            if (OnAreaItem != null && HoldedItem == null)
             {
                 GetItem();
@@ -43,6 +46,7 @@ public class PlayAndItensInteraction : MonoBehaviour
         OnAreaItem.Highlight();
         OnAreaItem.transform.SetParent(null);
         OnAreaItem.transform.position = transform.position;
+        m_AtribsSO.isHoldingItem = false;
     }
 
     private void GetItem()
@@ -51,6 +55,7 @@ public class PlayAndItensInteraction : MonoBehaviour
         HoldedItem.Unhighlight();
         HoldedItem.transform.position = ItemHolder.position;
         HoldedItem.transform.SetParent(ItemHolder);
+        m_AtribsSO.isHoldingItem = true;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -71,5 +76,11 @@ public class PlayAndItensInteraction : MonoBehaviour
             OnAreaItem = null;
             canHighlighAnItem = true;
         }
+    }
+
+    private IEnumerator Cooldown()
+    {
+        yield return new WaitForSeconds(0.3f);
+        CanGetOrDrop = true;
     }
 }
