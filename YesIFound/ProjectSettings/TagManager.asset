@@ -7,7 +7,7 @@ TagManager:
   - BalconyStop
   - NPC
   - Item
-
+  - WaveManager
   layers:
   - Default
   - TransparentFX

@@ -3,12 +3,14 @@ using UnityEngine;
 public class Npc : MonoBehaviour
 {
     [SerializeField] private float m_Speed;
+    private WaveManager m_WaveManager;
+    private GameObject m_RequestPopup;
     private bool m_Start;
     private bool m_Exit;
-    private GameObject m_RequestPopup;
 
     private void Start()
     {
+        m_WaveManager = GameObject.FindGameObjectWithTag("WaveManager").GetComponent<WaveManager>();
         m_Speed = 1.5f;
         m_Exit = false;
         m_Start = true;
@@ -30,11 +32,12 @@ public class Npc : MonoBehaviour
     }
 
     //Logic to Npc recive your request
-    public void TakeItem()
+    public void TakeItem(string _ItemRecived)
     {
         m_RequestPopup.SetActive(false);
         m_Exit = true;
         m_Speed *= -1f;
+        //pts
     }
 
     //Change Npc speed
