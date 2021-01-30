@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - BalconyStop
+  - NPC
   - Item
+
   layers:
   - Default
   - TransparentFX
