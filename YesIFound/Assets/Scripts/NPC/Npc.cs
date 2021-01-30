@@ -17,17 +17,19 @@ public class Npc : MonoBehaviour
 
     private void Update()
     {
-        if(m_Start)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y + (m_Speed * Time.deltaTime), transform.position.z);
-        }
-
-        if (m_Exit)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y + (m_Speed * Time.deltaTime), transform.position.z);
-        }
+        MoveNpc();
     }
 
+    private void MoveNpc()
+    {
+        if (m_Start)
+            transform.position = new Vector3(transform.position.x, transform.position.y + (m_Speed * Time.deltaTime), transform.position.z);
+
+        if (m_Exit)
+            transform.position = new Vector3(transform.position.x, transform.position.y + (m_Speed * Time.deltaTime), transform.position.z);
+    }
+
+    //Logic to Npc recive your request
     public void TakeItem()
     {
         m_RequestPopup.SetActive(false);
@@ -35,6 +37,13 @@ public class Npc : MonoBehaviour
         m_Speed *= -1f;
     }
 
+    //Change Npc speed
+    public void SetSpeed(float _Value)
+    {
+        m_Speed = _Value;
+    }
+
+    //NPC stop in balcony
     private void OnCollisionEnter2D(Collision2D _Collision)
     {
         if (m_Start)
