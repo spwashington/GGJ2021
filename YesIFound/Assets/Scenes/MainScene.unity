@@ -747,6 +747,17 @@ Transform:
   m_Father: {fileID: 461931092}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &250144528 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4368737752381708509, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
+  m_PrefabInstance: {fileID: 4368737751276974517}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &285562856
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,6 +1048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 319361299}
   - component: {fileID: 319361298}
+  - component: {fileID: 319361300}
   m_Layer: 0
   m_Name: MainMenuController
   m_TagString: Untagged
@@ -1075,6 +1087,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &319361300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319361297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 972cbd4741ed99949b16109cabac84bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeRemaining: 120
+  timerIsRunning: 0
+  timeText: {fileID: 250144528}
 --- !u!1 &337593893 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4368737750940956560, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
@@ -5501,6 +5528,10 @@ PrefabInstance:
     - target: {fileID: 4368737750940956572, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368737752381708509, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
+      propertyPath: m_text
+      value: 02:00
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
