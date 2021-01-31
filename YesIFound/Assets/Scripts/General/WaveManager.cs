@@ -17,9 +17,11 @@ public class WaveManager : MonoBehaviour
     private float m_SpawnDelay;
     private bool m_StartGame;
     private bool m_SinglePlayer;
+    private int m_NumberOfItensInWave;
 
     private void Start()
     {
+        m_NumberOfItensInWave = 38;
         m_SpawnDelay = 1.5f;
         m_WaveCount = 1;
         m_SinglePlayer = true;
@@ -32,7 +34,10 @@ public class WaveManager : MonoBehaviour
             m_StartGame = true;
 
         if (Input.GetKeyDown(KeyCode.V))
-            SpawnObjectsInWave(38);
+            WaveStart();
+
+        if (Input.GetKeyDown(KeyCode.C))
+            WaveReset();
 
         if (m_StartGame)
         {
@@ -66,6 +71,36 @@ public class WaveManager : MonoBehaviour
         }
     }
 
+    public void WaveStart()
+    {
+        SpawnObjectsInWave(m_NumberOfItensInWave);
+    }
+
+    private void DestroyAllNpcs()
+    {
+        for (int i = 0; i < m_ActiveNpcPlace.Length; i++)
+        {
+            if (m_ActiveNpcPlace[i].transform.childCount > 0)
+                Destroy(m_ActiveNpcPlace[i].transform.GetChild(0).gameObject);
+        }
+
+        if (m_InactiveNpc.childCount > 0)
+        {
+            for (int i = 0; i < m_InactiveNpc.childCount; i++)
+            {
+                Destroy(m_InactiveNpc.GetChild(i).gameObject);
+            }
+        }
+    }
+
+    public void WaveReset()
+    {
+        m_StartGame = false;
+        DestroyAllNpcs();
+        m_WaveCount++;
+        WaveStart();
+    }
+
     //Drop Item Logic to accept npc request in Balcony
     public void DropRequest(GameObject _Item, int _NpcIndex, string _ItemName, string _Color)
     {
@@ -88,9 +123,30 @@ public class WaveManager : MonoBehaviour
         return temp;
     }
 
+    public void RemoveAllItens()
+    {
+        if (m_Itens.childCount > 0)
+        {
+            for (int i = 0; i < m_Itens.childCount; i++)
+            {
+                Destroy(m_Itens.GetChild(i).gameObject);
+            }
+        }
+
+        if (m_ItensChoosed.childCount > 0)
+        {
+            for (int i = 0; i < m_ItensChoosed.childCount; i++)
+            {
+                Destroy(m_ItensChoosed.GetChild(i).gameObject);
+            }
+        }
+    }
+
     //Spawn Objects in scenario
     private void SpawnObjectsInWave(int _NumberOfObject)
     {
+        RemoveAllItens();
+
         int[] posIndex = new int[_NumberOfObject];
         int rndPos = Random.Range(0, m_ItensspawnPositions.Length);
         bool pass = false;
@@ -129,5 +185,7 @@ public class WaveManager : MonoBehaviour
             temp.GetComponent<ItemGameplay>().Atributes(m_ItensName[rndName], m_ItensColor[rndColor], spr);
             temp.transform.parent = m_Itens;
         }
+
+        m_StartGame = true;
     }
 }
