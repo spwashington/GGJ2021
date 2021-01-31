@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3906739692204620784}
   - component: {fileID: 3906739692204620787}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: ItemSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +50,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e2f52c8f0908d0943958731e81d67ff1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e75aa512367404cfe8c8d178a5baec6f, type: 3}
+  m_Sprite: {fileID: 5448344695324863823, guid: 75dfd4df61c53d545892fb30b40e041a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &3906739693547397487
@@ -267,3 +267,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_light: {fileID: 3906739693547397489}
   m_objSprite: {fileID: 3906739692204620787}
+  MaterialSrc: {fileID: 2100000, guid: e2f52c8f0908d0943958731e81d67ff1, type: 2}
