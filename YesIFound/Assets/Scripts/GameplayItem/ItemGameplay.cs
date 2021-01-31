@@ -6,7 +6,7 @@ public class ItemGameplay : MonoBehaviour
 {
     [SerializeField] SpriteRenderer m_light, m_objSprite;
     [SerializeField] Material MaterialSrc;
-
+    private bool m_NpcChooseThis;
     private string m_ItemName, m_Color;
     private Material ItemMaterial;
     public string ItemColor { get => m_Color; }
@@ -22,6 +22,7 @@ public class ItemGameplay : MonoBehaviour
 
     private void Awake()
     {
+        m_NpcChooseThis = false;
         Unhighlight();
         ItemMaterial = new Material(MaterialSrc);
     }
@@ -33,8 +34,27 @@ public class ItemGameplay : MonoBehaviour
         ItemMaterial.color = PossibleColors[_color];
         m_objSprite.sprite = _sprite;
         m_objSprite.material = ItemMaterial;
-
     }
+
+    public string GetName()
+    {
+        return m_ItemName;
+    }
+    public string GetColor()
+    {
+        return m_Color;
+    }
+
+    public bool IsNpcChooseThis()
+    {
+        return m_NpcChooseThis;
+    }
+
+    public void NpcChooseThis()
+    {
+        m_NpcChooseThis = true;
+    }
+
 
     public void Highlight()
     {

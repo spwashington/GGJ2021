@@ -5,6 +5,7 @@ public class Npc : MonoBehaviour
     [SerializeField] private float m_Speed;
     private WaveManager m_WaveManager;
     private GameObject m_RequestPopup;
+    [SerializeField] private string[] m_SelectedItem;
     private bool m_Start;
     private bool m_Exit;
 
@@ -14,7 +15,9 @@ public class Npc : MonoBehaviour
         m_Speed = 1.5f;
         m_Exit = false;
         m_Start = true;
+        m_SelectedItem = new string[2];
         m_RequestPopup = transform.GetChild(0).gameObject;
+        ChooseItem();
     }
 
     private void Update()
@@ -31,9 +34,22 @@ public class Npc : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y + (m_Speed * Time.deltaTime), transform.position.z);
     }
 
-    //Logic to Npc recive your request
-    public void TakeItem(string _ItemRecived)
+    private void ChooseItem()
     {
+        m_SelectedItem = m_WaveManager.GetItem();
+    }
+
+    //Logic to Npc recive your request
+    public void TakeItem(string _ItemNameRecived, string _ItemRecivedColor)
+    {
+        bool wrongItem = false;
+
+        if (m_SelectedItem[0] == _ItemNameRecived && m_SelectedItem[1] == _ItemRecivedColor)
+            wrongItem = false;
+        else
+            wrongItem = true;
+
+
         m_RequestPopup.SetActive(false);
         m_Exit = true;
         m_Speed *= -1f;

@@ -1180,6 +1180,7 @@ MonoBehaviour:
   m_NpcPrefab: {fileID: 4922924851210076978, guid: 14b5bb13a837b5348a7622ad955cb339, type: 3}
   m_ItemPrefab: {fileID: 3906739693650251471, guid: d925e60aac1c02b4090de8af646b2cd2, type: 3}
   m_Itens: {fileID: 507584738}
+  m_ItensChoosed: {fileID: 1684952398}
   m_ItensspawnPositions:
   - {fileID: 1232754817}
   - {fileID: 693091303}
@@ -1314,6 +1315,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1684952397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1684952398}
+  m_Layer: 0
+  m_Name: ItensChoosed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1684952398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684952397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.99, y: 0.94, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1710919131
 GameObject:
   m_ObjectHideFlags: 0
