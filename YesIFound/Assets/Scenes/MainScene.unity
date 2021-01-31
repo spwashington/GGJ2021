@@ -522,6 +522,17 @@ Transform:
   m_Father: {fileID: 461931092}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &140026528 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 140026528, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
+  m_PrefabInstance: {fileID: 4368737751276974517}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &194114596
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,6 +793,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &260003818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4368737751148159011, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
+  m_PrefabInstance: {fileID: 4368737751276974517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &267060099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4368737751007003315, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
+  m_PrefabInstance: {fileID: 4368737751276974517}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &285562856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,6 +2463,11 @@ CapsuleCollider2D:
   m_Offset: {x: 0.14422087, y: 0.2781277}
   m_Size: {x: 4.626028, y: 2.833638}
   m_Direction: 1
+--- !u!1 &784262921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4368737752737482746, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
+  m_PrefabInstance: {fileID: 4368737751276974517}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &788308112
 GameObject:
   m_ObjectHideFlags: 0
@@ -2584,6 +2610,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &865961191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4368737752681161318, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
+  m_PrefabInstance: {fileID: 4368737751276974517}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &873741459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3970,6 +4001,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1259592810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4368737751955799460, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
+  m_PrefabInstance: {fileID: 4368737751276974517}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1287555533
 GameObject:
   m_ObjectHideFlags: 0
@@ -4376,6 +4412,13 @@ MonoBehaviour:
   - {fileID: 61171256}
   m_InactiveNpc: {fileID: 527073223}
   m_WaveCount: 0
+  m_hearts:
+  - {fileID: 260003818}
+  - {fileID: 784262921}
+  - {fileID: 267060099}
+  - {fileID: 865961191}
+  - {fileID: 1259592810}
+  m_BigText: {fileID: 140026528}
 --- !u!114 &1476447296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5883,6 +5926,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 140026528, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.43867922
+      objectReference: {fileID: 0}
+    - target: {fileID: 140026528, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.43867922
+      objectReference: {fileID: 0}
+    - target: {fileID: 140026528, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4368737750940956560, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
       propertyPath: m_Name
       value: GameplayCanvas
@@ -6006,14 +6061,6 @@ PrefabInstance:
     - target: {fileID: 4368737751610344997, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -57
-      objectReference: {fileID: 0}
-    - target: {fileID: 4368737752241772446, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
-      propertyPath: m_text
-      value: DAY 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4368737752381708509, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
-      propertyPath: m_text
-      value: 02:00
       objectReference: {fileID: 0}
     - target: {fileID: 4368737752826361855, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}
       propertyPath: m_AnchorMax.y

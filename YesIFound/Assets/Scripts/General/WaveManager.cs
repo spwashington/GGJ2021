@@ -1,5 +1,8 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class WaveManager : MonoBehaviour
 {
@@ -19,6 +22,10 @@ public class WaveManager : MonoBehaviour
     private bool m_SinglePlayer;
     private int m_NumberOfItensInWave;
 
+    private int m_lives;
+    [SerializeField] private GameObject[] m_hearts;
+    [SerializeField] TextMeshProUGUI m_BigText;
+
     private void Start()
     {
         m_NumberOfItensInWave = 38;
@@ -26,6 +33,7 @@ public class WaveManager : MonoBehaviour
         m_WaveCount = 1;
         m_SinglePlayer = true;
         m_StartGame = false;
+        m_lives = 5;
     }
 
     private void Update()
@@ -187,5 +195,32 @@ public class WaveManager : MonoBehaviour
         }
 
         m_StartGame = true;
+    }
+
+    public void DecreaseLife()
+    {
+        if (m_lives > 1) m_lives--;
+        else StartCoroutine(GameOver());
+
+        foreach (GameObject heart in m_hearts) heart.SetActive(false);
+
+        for(int i = 0; i < m_lives; ++i)
+        {
+            m_hearts[i].SetActive(true);
+        }
+    }
+
+
+    private IEnumerator GameOver()
+    {
+        m_BigText.gameObject.SetActive(true);
+        m_BigText.text = "You\nLose";
+        yield return new WaitForSeconds(2);
+        ReloadScene();
+    }
+
+    private void ReloadScene()
+    {
+        SceneManager.LoadScene("MainScene");
     }
 }
