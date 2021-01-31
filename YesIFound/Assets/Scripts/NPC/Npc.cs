@@ -9,8 +9,7 @@ public class Npc : MonoBehaviour
     [SerializeField] private string[] m_SelectedItem;
     private WaveManager m_WaveManager;
     private GameObject m_RequestPopup;
-    private bool m_Start;
-    private bool m_Exit;
+    private bool m_CanMove;
     private float m_WaitLimit;
     private bool m_StartCountDownToExit;
     private BoxCollider2D colliderNPC;
@@ -25,6 +24,7 @@ public class Npc : MonoBehaviour
     private Animator animNPC;
 
     [SerializeField] Sprite m_HappyFace, m_AngryFace;
+    bool m_HasFound;
 
     private void Start()
     {
@@ -35,8 +35,8 @@ public class Npc : MonoBehaviour
         colliderNPC = GetComponent<BoxCollider2D>();
         m_WaveManager = GameObject.FindGameObjectWithTag("WaveManager").GetComponent<WaveManager>();
         m_Speed = 1.5f;
-        m_Exit = false;
-        m_Start = true;
+        m_HasFound = false;
+        m_CanMove = true;
         m_SelectedItem = new string[2];
         m_RequestPopup = transform.GetChild(0).gameObject;
         ChooseItem();
@@ -52,10 +52,7 @@ public class Npc : MonoBehaviour
 
     private void MoveNpc()
     {
-        if (m_Start)
-            transform.position = new Vector3(transform.position.x, transform.position.y + (m_Speed * Time.deltaTime), transform.position.z);
-
-        if (m_Exit)
+        if (m_CanMove)
             transform.position = new Vector3(transform.position.x, transform.position.y + (m_Speed * Time.deltaTime), transform.position.z);
     }
 
@@ -80,26 +77,25 @@ public class Npc : MonoBehaviour
     //Logic to Npc recive your request
     public void TakeItem(string _ItemNameRecived, string _ItemRecivedColor)
     {
-        bool wrongItem = false;
-
         if (m_SelectedItem[0] == _ItemNameRecived && m_SelectedItem[1] == _ItemRecivedColor)
-        {
-            wrongItem = false;
-            m_RequestPopup.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = m_HappyFace;
-        }
+            m_HasFound = true;
         else
-        {
-            wrongItem = true;
-            m_RequestPopup.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = m_AngryFace;
-        }
+            m_HasFound = false;
 
-        m_Exit = true;
+        ReceivedItem(m_HasFound);
+    }
+
+    private void ReceivedItem(bool is_correct)
+    {
+        Sprite reaction = is_correct ? m_HappyFace : m_AngryFace;
+        m_RequestPopup.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = reaction;
+
+        m_CanMove = true;
         m_Speed *= -1f;
         spriteNPC.sprite = spriteList[index];
         animNPC.speed = 1;
         colliderNPC.enabled = false;
-
-
+        m_StartCountDownToExit = false;
     }
 
     //Change Npc speed
@@ -114,15 +110,9 @@ public class Npc : MonoBehaviour
         {
             m_WaitLimit += 1f * Time.deltaTime;
 
-            if (m_WaitLimit >= 15f)
+            if (m_WaitLimit >= 15f && !m_HasFound)
             {
-                m_RequestPopup.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = m_AngryFace;
-                m_Exit = true;
-                m_Speed *= -1f;
-                spriteNPC.sprite = spriteList[index];
-                animNPC.speed = 1;
-                colliderNPC.enabled = false;
-                m_StartCountDownToExit = false;
+                ReceivedItem(m_HasFound);
             }
         }
     }
@@ -130,11 +120,11 @@ public class Npc : MonoBehaviour
     //NPC stop in balcony
     private void OnCollisionEnter2D(Collision2D _Collision)
     {
-        if (m_Start)
+        if (m_CanMove)
         {
             if (_Collision.gameObject.tag == "BalconyStop")
             {
-                m_Start = false;
+                m_CanMove = false;
                 m_RequestPopup.SetActive(true);
                 animNPC.speed = 0;
                 m_StartCountDownToExit = true;
