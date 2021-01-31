@@ -12,18 +12,26 @@ public class MenuController : MonoBehaviour
 
     public CamAnimEnd camAlert;
 
-    public GameObject gameplayUI;
+    public GameObject gameplayCanvas;
+    public GameplayUI gameplayUI;
+
+    public PlayerMovement playerMoviment;
 
     private void Awake()
     {
         camAnim = cam.GetComponent<Animator>();
         camAlert = cam.GetComponent<CamAnimEnd>();
+        gameplayUI = GetComponent<GameplayUI>();
     }
 
     private void Update()
     {
         if (camAlert.endAnim == true)
+        {
             ChangeCamera();
+            camAlert.endAnim = false;
+
+        }
     }
 
     public void PlayGame()
@@ -62,7 +70,9 @@ public class MenuController : MonoBehaviour
     {
         cam.SetActive(false);
         cam2.SetActive(true);
-        gameplayUI.SetActive(true);
+        gameplayCanvas.SetActive(true);
+        gameplayUI.timerIsRunning = true;
+        playerMoviment.canMove = true;
     }
 
 }
