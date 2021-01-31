@@ -12,7 +12,7 @@ public class WaveManager : MonoBehaviour
     [SerializeField] private string[] m_ItensColor;
     [SerializeField] private Transform[] m_SpawnNpc;
     [SerializeField] private GameObject[] m_ActiveNpcPlace;
-    private int m_WaveCount;
+    public int m_WaveCount;
     private float m_SpawnDelay;
     private bool m_StartGame;
     private bool m_SinglePlayer;

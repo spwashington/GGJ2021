@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     bool isDashing, canDash, finishedDash;
+    public bool canMove = false;
 
     [SerializeField] PlayerAtribsSO m_AtribsSO;
 
@@ -18,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (!canMove)
+            return;
+
         m_AtribsSO.movement.x = Input.GetAxisRaw("Horizontal");
         m_AtribsSO.movement.y = Input.GetAxisRaw("Vertical");
         if (canDash && m_AtribsSO.movement.normalized != Vector2.zero && Input.GetAxis(m_AtribsSO.DashButton) > 0)

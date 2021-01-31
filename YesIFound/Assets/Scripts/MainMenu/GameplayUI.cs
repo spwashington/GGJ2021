@@ -10,6 +10,9 @@ public class GameplayUI : MonoBehaviour
     public bool timerIsRunning = false;
     public TMP_Text timeText;
 
+    public TMP_Text daysCount;
+    public WaveManager waveManger;
+
     private void Start()
     {
         // Starts the timer automatically
@@ -18,6 +21,8 @@ public class GameplayUI : MonoBehaviour
 
     void Update()
     {
+        daysCount.text = "DAY " + waveManger.m_WaveCount.ToString();
+
         if (timerIsRunning)
         {
             if (timeRemaining > 0)
