@@ -42,9 +42,6 @@ public class Npc : MonoBehaviour
     {
         MoveNpc();
         DestroyNPC();
-
-        if (Input.GetKeyDown(KeyCode.K))
-            TakeItem("Glasses");
     }
 
     private void MoveNpc()
