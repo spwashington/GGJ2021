@@ -6,17 +6,20 @@ public class WaveManager : MonoBehaviour
     [SerializeField] private GameObject m_NpcPrefab;
     [SerializeField] private GameObject m_ItemPrefab;
     [SerializeField] private Transform m_Itens;
+    [SerializeField] private Transform m_ItensChoosed;
     [SerializeField] private Transform[] m_ItensspawnPositions;
     [SerializeField] private string[] m_ItensName;
     [SerializeField] private string[] m_ItensColor;
     [SerializeField] private Transform[] m_SpawnNpc;
     [SerializeField] private GameObject[] m_ActiveNpcPlace;
     private int m_WaveCount;
+    private float m_SpawnDelay;
     private bool m_StartGame;
     private bool m_SinglePlayer;
 
     private void Start()
     {
+        m_SpawnDelay = 1.5f;
         m_WaveCount = 1;
         m_SinglePlayer = true;
         m_StartGame = false;
@@ -39,16 +42,23 @@ public class WaveManager : MonoBehaviour
     //SPAWN NPCs Logic
     private void SpawnNpc()
     {
-        if (m_SinglePlayer)
+        m_SpawnDelay += 1f * Time.deltaTime;
+
+        if (m_SpawnDelay > Random.Range(1f, 2f))
         {
-            for (int i = 0; i < 5; i++)
+            if (m_SinglePlayer)
             {
-                if (i % 2 == 0)
+                for (int i = 0; i < 5; i++)
                 {
-                    if (m_ActiveNpcPlace[i].transform.childCount == 0)
+                    if (i % 2 == 0)
                     {
-                        GameObject temp = Instantiate(m_NpcPrefab, m_SpawnNpc[i].position, Quaternion.identity);
-                        temp.transform.parent = m_ActiveNpcPlace[i].transform;
+                        if (m_ActiveNpcPlace[i].transform.childCount == 0)
+                        {
+                            GameObject temp = Instantiate(m_NpcPrefab, m_SpawnNpc[i].position, Quaternion.identity);
+                            temp.transform.parent = m_ActiveNpcPlace[i].transform;
+                            m_SpawnDelay = 0f;
+                            break;
+                        }
                     }
                 }
             }
@@ -56,10 +66,24 @@ public class WaveManager : MonoBehaviour
     }
 
     //Drop Item Logic to accept npc request in Balcony
-    public void DragRequest(int _NpcIndex, string _Item)
+    public void DropRequest(GameObject _Item, int _NpcIndex, string _ItemName, string _Color)
     {
         if (m_ActiveNpcPlace[_NpcIndex].transform.childCount > 0)
-            m_ActiveNpcPlace[_NpcIndex].transform.GetChild(0).GetComponent<Npc>().TakeItem(_Item);
+        {
+            m_ActiveNpcPlace[_NpcIndex].transform.GetChild(0).GetComponent<Npc>().TakeItem(_ItemName, _Color);
+            Destroy(_Item.gameObject);
+        }
+    }
+
+    public string[] GetItem()
+    {
+        string[] temp = new string[2];
+        int rnd = Random.Range(0, m_Itens.childCount - 1);
+        m_Itens.GetChild(rnd).GetComponent<ItemGameplay>().NpcChooseThis();
+        temp[0] = m_Itens.GetChild(rnd).GetComponent<ItemGameplay>().GetName();
+        temp[1] = m_Itens.GetChild(rnd).GetComponent<ItemGameplay>().GetColor();
+        m_Itens.GetChild(rnd).transform.parent = m_ItensChoosed;
+        return temp;
     }
 
     //Spawn Objects in scenario
@@ -101,7 +125,7 @@ public class WaveManager : MonoBehaviour
             Sprite spr = Resources.Load<Sprite>("Sprites/Items/" + m_ItensName[rndName]);
 
             temp.GetComponent<ItemGameplay>().Atributes(m_ItensName[rndName], m_ItensColor[rndColor], spr);
-            temp.transform.parent = m_Itens.transform;
+            temp.transform.parent = m_Itens;
         }
     }
 }
