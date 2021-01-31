@@ -91,6 +91,8 @@ public class Npc : MonoBehaviour
         spriteNPC.sprite = spriteList[index];
         animNPC.speed = 1;
         colliderNPC.enabled = false;
+
+
     }
 
     //Change Npc speed
@@ -105,7 +107,7 @@ public class Npc : MonoBehaviour
         {
             m_WaitLimit += 1f * Time.deltaTime;
 
-            if (m_WaitLimit >= 3f)
+            if (m_WaitLimit >= 15f)
             {
                 m_RequestPopup.SetActive(false);
                 m_Exit = true;
