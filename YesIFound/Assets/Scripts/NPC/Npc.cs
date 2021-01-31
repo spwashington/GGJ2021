@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Npc : MonoBehaviour
 {
+    [SerializeField] Material m_MaterialSrc;
     [SerializeField] private float m_Speed;
     private WaveManager m_WaveManager;
     private GameObject m_RequestPopup;
@@ -53,9 +54,22 @@ public class Npc : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y + (m_Speed * Time.deltaTime), transform.position.z);
     }
 
+    Dictionary<string, Color> PossibleColors = new Dictionary<string, Color> {
+        {"Red", Color.red },
+        {"Blue", Color.blue},
+        {"Yellow", Color.yellow},
+        {"Green", Color.green},
+        {"White", Color.white }
+    };
     private void ChooseItem()
     {
         m_SelectedItem = m_WaveManager.GetItem();
+
+        Material itemMaterial = new Material(m_MaterialSrc);
+        itemMaterial.color = PossibleColors[m_SelectedItem[1]];
+        Sprite spr = Resources.Load<Sprite>("Sprites/Items/" + m_SelectedItem[0]);
+        m_RequestPopup.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = spr;
+        m_RequestPopup.transform.GetChild(0).GetComponent<SpriteRenderer>().material = itemMaterial;
     }
 
     //Logic to Npc recive your request

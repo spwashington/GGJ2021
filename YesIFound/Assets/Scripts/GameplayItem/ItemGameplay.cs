@@ -55,6 +55,11 @@ public class ItemGameplay : MonoBehaviour
         m_NpcChooseThis = true;
     }
 
+    public Sprite GetSprite()
+    {
+        return m_objSprite.sprite;
+    }
+
 
     public void Highlight()
     {
