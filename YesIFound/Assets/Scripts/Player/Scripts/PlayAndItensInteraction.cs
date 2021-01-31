@@ -11,6 +11,7 @@ public class PlayAndItensInteraction : MonoBehaviour
 
     ItemGameplay HoldedItem;
     ItemGameplay OnAreaItem;
+    Transform ItemPreviousParent;
     bool canHighlighAnItem, CanGetOrDrop;
 
 
@@ -39,23 +40,25 @@ public class PlayAndItensInteraction : MonoBehaviour
         }
     }
 
-    private void DropItem()
-    {
-        OnAreaItem = HoldedItem;
-        HoldedItem = null;
-        OnAreaItem.Highlight();
-        OnAreaItem.transform.SetParent(null);
-        OnAreaItem.transform.position = transform.position;
-        m_AtribsSO.isHoldingItem = false;
-    }
-
     private void GetItem()
     {
         HoldedItem = OnAreaItem;
         HoldedItem.Unhighlight();
         HoldedItem.transform.position = ItemHolder.position;
+        ItemPreviousParent = HoldedItem.transform.parent;
         HoldedItem.transform.SetParent(ItemHolder);
         m_AtribsSO.isHoldingItem = true;
+    }
+
+    private void DropItem()
+    {
+        OnAreaItem = HoldedItem;
+        HoldedItem = null;
+        OnAreaItem.Highlight();
+        OnAreaItem.transform.SetParent(ItemPreviousParent);
+        ItemPreviousParent = null;
+        OnAreaItem.transform.position = transform.position;
+        m_AtribsSO.isHoldingItem = false;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
