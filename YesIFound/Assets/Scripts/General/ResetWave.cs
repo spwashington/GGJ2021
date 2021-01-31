@@ -25,7 +25,7 @@ public class ResetWave : MonoBehaviour
         camInitial.SetActive(true);
         camPlayer.SetActive(false);
         train.SetActive(true);
-        menuController.PlayGame();
+        menuController.PlayGame2();
         gameplayUI.timeRemaining = 120;
         gameplayUI.timerIsRunning = false;
         playerMovement.canMove = false;

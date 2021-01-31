@@ -13,9 +13,10 @@ public class WaveManager : MonoBehaviour
     [SerializeField] private Transform[] m_SpawnNpc;
     [SerializeField] private GameObject[] m_ActiveNpcPlace;
     [SerializeField] private Transform m_InactiveNpc;
+    public ResetWave resetWave;
     public int m_WaveCount;
     private float m_SpawnDelay;
-    private bool m_StartGame;
+    public bool m_StartGame;
     private bool m_SinglePlayer;
     private int m_NumberOfItensInWave;
     private float m_WaveSpeed;
@@ -32,20 +33,21 @@ public class WaveManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            m_StartGame = true;
+        //if (Input.GetKeyDown(KeyCode.Space))
+            //m_StartGame = true;
 
-        if (Input.GetKeyDown(KeyCode.V))
-            WaveStart();
+        //if (Input.GetKeyDown(KeyCode.V))
+            //WaveStart();
 
-        if (Input.GetKeyDown(KeyCode.C))
-            WaveReset();
+        //if (Input.GetKeyDown(KeyCode.C))
+            //WaveReset();
 
         if (Input.GetKeyDown(KeyCode.P))
             m_WaveSpeed += 1f;
 
         if (m_StartGame)
         {
+            ItemCheck();
             SpawnNpc();
         }
     }
@@ -53,6 +55,7 @@ public class WaveManager : MonoBehaviour
     //SPAWN NPCs Logic
     private void SpawnNpc()
     {
+
         m_SpawnDelay += 1f * Time.deltaTime;
 
         if (m_SpawnDelay > Random.Range(1f, 2f))
@@ -65,10 +68,15 @@ public class WaveManager : MonoBehaviour
                     {
                         if (m_ActiveNpcPlace[i].transform.childCount == 0)
                         {
-                            GameObject temp = Instantiate(m_NpcPrefab, m_SpawnNpc[i].position, Quaternion.identity);
-                            temp.transform.parent = m_ActiveNpcPlace[i].transform;
-                            m_SpawnDelay = 0f;
-                            break;
+                            if (m_Itens.childCount > 0)
+                            {
+                                GameObject temp = Instantiate(m_NpcPrefab, m_SpawnNpc[i].position, Quaternion.identity);
+                                temp.transform.parent = m_ActiveNpcPlace[i].transform;
+                                m_SpawnDelay = 0f;
+                                break;
+                            }
+
+                                
                         }
                     }
                 }
@@ -86,7 +94,7 @@ public class WaveManager : MonoBehaviour
         SpawnObjectsInWave(m_NumberOfItensInWave);
     }
 
-    private void DestroyAllNpcs()
+    public void DestroyAllNpcs()
     {
         for (int i = 0; i < m_ActiveNpcPlace.Length; i++)
         {
@@ -125,6 +133,7 @@ public class WaveManager : MonoBehaviour
         }
 
         WaveStart();
+        resetWave.ResetWaveMethod();
     }
 
     //Drop Item Logic to accept npc request in Balcony
@@ -133,7 +142,7 @@ public class WaveManager : MonoBehaviour
         if (m_ActiveNpcPlace[_NpcIndex].transform.childCount > 0)
         {
             m_ActiveNpcPlace[_NpcIndex].transform.GetChild(0).GetComponent<Npc>().TakeItem(_ItemName, _Color);
-            m_ActiveNpcPlace[_NpcIndex].transform.GetChild(0).transform.parent = m_InactiveNpc; //ADICIONEI ISSO, TESTAR SE Ñ BUGA 
+            //m_ActiveNpcPlace[_NpcIndex].transform.GetChild(0).transform.parent = m_InactiveNpc; //ADICIONEI ISSO, TESTAR SE Ñ BUGA 
             Destroy(_Item.gameObject);
         }
     }
@@ -213,5 +222,30 @@ public class WaveManager : MonoBehaviour
         }
 
         m_StartGame = true;
+    }
+
+    void ItemCheck()
+    {
+        if(m_Itens.childCount == 0 && m_ItensChoosed.childCount == 0)
+        {
+            //if('tem vida?')
+            WaveReset();
+        }
+    }
+
+    public void DeleteChooseItems(string name, string color)
+    {
+        if(m_ItensChoosed.childCount > 0)
+        {
+            for(int i=0; i < m_ItensChoosed.childCount; i++)
+            {
+                if(m_ItensChoosed.GetChild(i).GetComponent<ItemGameplay>().GetName() == name && m_ItensChoosed.GetChild(i).GetComponent<ItemGameplay>().GetColor() == color)
+                {
+                    Destroy(m_ItensChoosed.GetChild(i).gameObject);
+                    break;
+                }
+                
+            }
+        }
     }
 }

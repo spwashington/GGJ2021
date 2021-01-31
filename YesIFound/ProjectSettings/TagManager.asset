@@ -9,6 +9,7 @@ TagManager:
   - Item
   - WaveManager
   - Balcony
+  - KillNPC
   layers:
   - Default
   - TransparentFX
