@@ -48,6 +48,9 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator DashControl()
     {
+        AudioSource temp = GetComponent<AudioSource>();
+        temp.Play(0);
+
         isDashing = true;
         canDash = finishedDash = false;
 
