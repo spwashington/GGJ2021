@@ -35,6 +35,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!canMove)
+            return;
+
         float speed = isDashing ? m_AtribsSO.DashSpeed : m_AtribsSO.WalkSpeed; 
         rb.MovePosition(rb.position + m_AtribsSO.movement.normalized * speed * Time.fixedDeltaTime);
     }

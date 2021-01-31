@@ -1122,6 +1122,7 @@ MonoBehaviour:
   timeText: {fileID: 250144528}
   daysCount: {fileID: 2138120447}
   waveManger: {fileID: 1476447295}
+  resetWave: {fileID: 1476447296}
 --- !u!1 &337593893 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4368737750940956560, guid: 05d763e3cfd6e124e9ba4f3975076437, type: 3}

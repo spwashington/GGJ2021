@@ -22,10 +22,10 @@ public class ResetWave : MonoBehaviour
 
     public void ResetWaveMethod()
     {
-        menuController.PlayGame();
         camInitial.SetActive(true);
         camPlayer.SetActive(false);
         train.SetActive(true);
+        menuController.PlayGame();
         gameplayUI.timeRemaining = 120;
         gameplayUI.timerIsRunning = false;
         playerMovement.canMove = false;
