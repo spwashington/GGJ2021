@@ -89,6 +89,7 @@ public class Npc : MonoBehaviour
     private void ReceivedItem(bool is_correct)
     {
         Sprite reaction = is_correct ? m_HappyFace : m_AngryFace;
+
         m_RequestPopup.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = reaction;
 
         m_CanMove = true;
