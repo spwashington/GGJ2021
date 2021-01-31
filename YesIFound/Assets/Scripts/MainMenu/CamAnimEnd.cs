@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class CamAnimEnd : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public bool endAnim;
+
+
+
+    public void FinalAnim()
     {
-        
+        endAnim = true;
     }
 }

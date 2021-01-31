@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd5172d6b4c06d4fb40c69aeb1f506e, type: 3}
   m_Name: Player Atribs
   m_EditorClassIdentifier: 
-  GetAnDropItemButton: Fire1
+  GetAnDropItemButton: Fire2
   DashButton: Jump
-  WalkSpeed: 3
-  DashSpeed: 15
-  DashDuration: 0.15
-  DashCooldown: 1
+  WalkSpeed: 20
+  DashSpeed: 40
+  DashDuration: 0.2
+  DashCooldown: 0.3
   Gender: Male
   movement: {x: 0, y: 0}
   isHoldingItem: 0
