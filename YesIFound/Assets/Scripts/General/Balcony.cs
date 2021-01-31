@@ -5,7 +5,7 @@ using UnityEngine;
 public class Balcony : MonoBehaviour
 {
     [SerializeField] int BalconyIndex;
-    WaveManager m_WaveManager;
+    [SerializeField] WaveManager m_WaveManager;
     bool canDrop = true;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -15,9 +15,7 @@ public class Balcony : MonoBehaviour
             canDrop = false;
             StartCoroutine(DropCooldown());
             ItemGameplay item = collision.gameObject.GetComponent<ItemGameplay>();
-            Debug.Log("OKKKKKKK");
-            print(collision.gameObject + " " + BalconyIndex + " " + item.ItemName + " " + item.ItemColor);
-            //m_WaveManager.DropRequest(collision.gameObject, BalconyIndex, item.ItemName, item.ItemColor);
+            m_WaveManager.DropRequest(collision.gameObject, BalconyIndex, item.ItemName, item.ItemColor);
         }
     }
 
