@@ -13,8 +13,6 @@ public class GameplayUI : MonoBehaviour
     public TMP_Text daysCount;
     public WaveManager waveManger;
 
-    public ResetWave resetWave;
-
     private void Start()
     {
         // Starts the timer automatically
@@ -37,7 +35,7 @@ public class GameplayUI : MonoBehaviour
                 //Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
-                resetWave.ResetWaveMethod();
+                waveManger.WaveReset();
                 //acabou a wave
             }
         }

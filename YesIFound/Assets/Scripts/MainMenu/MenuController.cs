@@ -6,6 +6,7 @@ public class MenuController : MonoBehaviour
 {
     public GameObject cam;
     public GameObject cam2;
+    public GameObject train;
     private Animator camAnim;
 
     public PlayerAtribsSO playerSO;
@@ -16,6 +17,8 @@ public class MenuController : MonoBehaviour
     public GameplayUI gameplayUI;
 
     public PlayerMovement playerMoviment;
+
+    public WaveManager waveManager;
 
     private void Awake()
     {
@@ -29,8 +32,8 @@ public class MenuController : MonoBehaviour
         if (camAlert.endAnim == true)
         {
             ChangeCamera();
+            
             camAlert.endAnim = false;
-
         }
     }
 
@@ -38,6 +41,14 @@ public class MenuController : MonoBehaviour
     {
         
         StartCoroutine(CamTrigger());
+        
+    }
+
+    public void PlayGame2()
+    {
+
+        StartCoroutine(CamTrigger2());
+
     }
 
     public void QuitGame()
@@ -48,10 +59,20 @@ public class MenuController : MonoBehaviour
 
     private IEnumerator CamTrigger()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(6f);
         camAnim.SetBool("isStartCamera", true);
         //Debug.Log("Play");
+        waveManager.WaveStart();
+        yield return null;
+        camAnim.SetBool("isStartCamera", false);
+    }
 
+    private IEnumerator CamTrigger2()
+    {
+        camAnim.SetBool("isStartCamera", true);
+        //Debug.Log("Play");
+        yield return new WaitForSeconds(4f);
+        waveManager.WaveReset();
         yield return null;
         camAnim.SetBool("isStartCamera", false);
     }
@@ -73,6 +94,7 @@ public class MenuController : MonoBehaviour
         gameplayCanvas.SetActive(true);
         gameplayUI.timerIsRunning = true;
         playerMoviment.canMove = true;
+        train.SetActive(false);
     }
 
 }

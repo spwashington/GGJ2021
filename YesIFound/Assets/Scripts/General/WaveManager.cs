@@ -13,6 +13,7 @@ public class WaveManager : MonoBehaviour
     [SerializeField] private Transform[] m_SpawnNpc;
     [SerializeField] private GameObject[] m_ActiveNpcPlace;
     [SerializeField] private Transform m_InactiveNpc;
+    public ResetWave resetWave;
     public int m_WaveCount;
     private float m_SpawnDelay;
     private bool m_StartGame;
@@ -32,14 +33,14 @@ public class WaveManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            m_StartGame = true;
+        //if (Input.GetKeyDown(KeyCode.Space))
+            //m_StartGame = true;
 
-        if (Input.GetKeyDown(KeyCode.V))
-            WaveStart();
+        //if (Input.GetKeyDown(KeyCode.V))
+            //WaveStart();
 
-        if (Input.GetKeyDown(KeyCode.C))
-            WaveReset();
+        //if (Input.GetKeyDown(KeyCode.C))
+            //WaveReset();
 
         if (Input.GetKeyDown(KeyCode.P))
             m_WaveSpeed += 1f;
@@ -125,6 +126,7 @@ public class WaveManager : MonoBehaviour
         }
 
         WaveStart();
+        resetWave.ResetWaveMethod();
     }
 
     //Drop Item Logic to accept npc request in Balcony
@@ -133,7 +135,7 @@ public class WaveManager : MonoBehaviour
         if (m_ActiveNpcPlace[_NpcIndex].transform.childCount > 0)
         {
             m_ActiveNpcPlace[_NpcIndex].transform.GetChild(0).GetComponent<Npc>().TakeItem(_ItemName, _Color);
-            m_ActiveNpcPlace[_NpcIndex].transform.GetChild(0).transform.parent = m_InactiveNpc; //ADICIONEI ISSO, TESTAR SE Ñ BUGA 
+            //m_ActiveNpcPlace[_NpcIndex].transform.GetChild(0).transform.parent = m_InactiveNpc; //ADICIONEI ISSO, TESTAR SE Ñ BUGA 
             Destroy(_Item.gameObject);
         }
     }

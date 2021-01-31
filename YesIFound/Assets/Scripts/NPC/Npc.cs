@@ -47,7 +47,6 @@ public class Npc : MonoBehaviour
     private void Update()
     {
         MoveNpc();
-        DestroyNPC();
         WaitRequest();
     }
 
@@ -95,8 +94,10 @@ public class Npc : MonoBehaviour
         m_Speed *= -1f;
         spriteNPC.sprite = spriteList[index];
         animNPC.speed = 1;
-        colliderNPC.enabled = false;
         m_StartCountDownToExit = false;
+        colliderNPC.isTrigger = true;
+
+
     }
 
     //Change Npc speed
@@ -114,6 +115,13 @@ public class Npc : MonoBehaviour
             if (m_WaitLimit >= 15f && !m_HasFound)
             {
                 ReceivedItem(m_HasFound);
+                m_RequestPopup.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = m_AngryFace;
+                m_Exit = true;
+                m_Speed *= -1f;
+                spriteNPC.sprite = spriteList[index];
+                animNPC.speed = 1;
+                colliderNPC.isTrigger = true;
+                m_StartCountDownToExit = false;
             }
         }
     }
@@ -133,17 +141,22 @@ public class Npc : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(colliderNPC.isTrigger == true)
+        {
+            if (collision.gameObject.CompareTag("KillNPC"))
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+
     private void RandomNPC()
     {
         index = Random.Range(0, spriteList.Capacity);
         spriteNPC.sprite = spriteBackList[index];
     }
 
-    private void DestroyNPC()
-    {
-        if(gameObject.transform.position.y < -5)
-        {
-            Destroy(gameObject);
-        }
-    }
+
 }
