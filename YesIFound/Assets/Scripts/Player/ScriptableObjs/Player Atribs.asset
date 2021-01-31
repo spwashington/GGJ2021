@@ -18,6 +18,6 @@ MonoBehaviour:
   DashSpeed: 15
   DashDuration: 0.15
   DashCooldown: 1
-  Gender: Female
+  Gender: Male
   movement: {x: 0, y: 0}
   isHoldingItem: 0
