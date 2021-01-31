@@ -31,7 +31,7 @@ public class WaveManager : MonoBehaviour
             m_StartGame = true;
 
         if (Input.GetKeyDown(KeyCode.V))
-            SpawnObjectsInWave(3);
+            SpawnObjectsInWave(38);
 
         if (m_StartGame)
         {
