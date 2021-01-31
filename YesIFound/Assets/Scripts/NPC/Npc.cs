@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Npc : MonoBehaviour
@@ -9,8 +11,23 @@ public class Npc : MonoBehaviour
     private bool m_Start;
     private bool m_Exit;
 
+    private BoxCollider2D colliderNPC;
+
+    [SerializeField]
+    private List<Sprite> spriteList;
+
+    [SerializeField]
+    private List<Sprite> spriteBackList;
+    private SpriteRenderer spriteNPC;
+    private int index;
+
+    private Animator animNPC;
+
     private void Start()
     {
+        spriteNPC = GetComponentInChildren<SpriteRenderer>();
+        animNPC = GetComponentInChildren<Animator>();
+        colliderNPC = GetComponent<BoxCollider2D>();
         m_WaveManager = GameObject.FindGameObjectWithTag("WaveManager").GetComponent<WaveManager>();
         m_Speed = 1.5f;
         m_Exit = false;
@@ -18,11 +35,16 @@ public class Npc : MonoBehaviour
         m_SelectedItem = new string[2];
         m_RequestPopup = transform.GetChild(0).gameObject;
         ChooseItem();
+        RandomNPC();
     }
 
     private void Update()
     {
         MoveNpc();
+        DestroyNPC();
+
+        if (Input.GetKeyDown(KeyCode.K))
+            TakeItem("Glasses");
     }
 
     private void MoveNpc()
@@ -53,6 +75,9 @@ public class Npc : MonoBehaviour
         m_RequestPopup.SetActive(false);
         m_Exit = true;
         m_Speed *= -1f;
+        spriteNPC.sprite = spriteList[index];
+        animNPC.speed = 1;
+        colliderNPC.enabled = false;
         //pts
     }
 
@@ -71,7 +96,22 @@ public class Npc : MonoBehaviour
             {
                 m_Start = false;
                 m_RequestPopup.SetActive(true);
+                animNPC.speed = 0;
             }
+        }
+    }
+
+    private void RandomNPC()
+    {
+        index = Random.Range(0, spriteList.Capacity);
+        spriteNPC.sprite = spriteBackList[index];
+    }
+
+    private void DestroyNPC()
+    {
+        if(gameObject.transform.position.y < -5)
+        {
+            Destroy(gameObject);
         }
     }
 }
