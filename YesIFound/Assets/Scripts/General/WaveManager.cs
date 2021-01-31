@@ -18,10 +18,12 @@ public class WaveManager : MonoBehaviour
     private bool m_StartGame;
     private bool m_SinglePlayer;
     private int m_NumberOfItensInWave;
+    private float m_WaveSpeed;
 
     private void Start()
     {
-        m_NumberOfItensInWave = 38;
+        m_WaveSpeed = 1.5f;
+        m_NumberOfItensInWave = 10;
         m_SpawnDelay = 1.5f;
         m_WaveCount = 1;
         m_SinglePlayer = true;
@@ -38,6 +40,9 @@ public class WaveManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.C))
             WaveReset();
+
+        if (Input.GetKeyDown(KeyCode.P))
+            m_WaveSpeed += 1f;
 
         if (m_StartGame)
         {
@@ -71,6 +76,11 @@ public class WaveManager : MonoBehaviour
         }
     }
 
+    public float GetWaveSpeed()
+    {
+        return m_WaveSpeed;
+    }
+
     public void WaveStart()
     {
         SpawnObjectsInWave(m_NumberOfItensInWave);
@@ -98,6 +108,22 @@ public class WaveManager : MonoBehaviour
         m_StartGame = false;
         DestroyAllNpcs();
         m_WaveCount++;
+        m_WaveSpeed += 0.5f;
+
+        if (m_WaveSpeed > 6)
+            m_WaveSpeed = 6f;
+
+        if (m_WaveCount % 2 == 0)
+        {
+            if (m_WaveCount > 2)
+            {
+                m_NumberOfItensInWave += 5;
+
+                if (m_NumberOfItensInWave > 35)
+                    m_NumberOfItensInWave = 35;
+            }
+        }
+
         WaveStart();
     }
 

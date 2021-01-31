@@ -32,11 +32,11 @@ public class Npc : MonoBehaviour
         animNPC = GetComponentInChildren<Animator>();
         colliderNPC = GetComponent<BoxCollider2D>();
         m_WaveManager = GameObject.FindGameObjectWithTag("WaveManager").GetComponent<WaveManager>();
-        m_Speed = 1.5f;
         m_Exit = false;
         m_Start = true;
         m_SelectedItem = new string[2];
         m_RequestPopup = transform.GetChild(0).gameObject;
+        m_Speed = m_WaveManager.GetWaveSpeed();
         ChooseItem();
         RandomNPC();
     }
