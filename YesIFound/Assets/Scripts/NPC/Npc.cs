@@ -6,12 +6,13 @@ public class Npc : MonoBehaviour
 {
     [SerializeField] Material m_MaterialSrc;
     [SerializeField] private float m_Speed;
+    [SerializeField] private string[] m_SelectedItem;
     private WaveManager m_WaveManager;
     private GameObject m_RequestPopup;
-    [SerializeField] private string[] m_SelectedItem;
     private bool m_Start;
     private bool m_Exit;
-
+    private float m_WaitLimit;
+    private bool m_StartCountDownToExit;
     private BoxCollider2D colliderNPC;
 
     [SerializeField]
@@ -21,11 +22,12 @@ public class Npc : MonoBehaviour
     private List<Sprite> spriteBackList;
     private SpriteRenderer spriteNPC;
     private int index;
-
     private Animator animNPC;
 
     private void Start()
     {
+        m_WaitLimit = 0f;
+        m_StartCountDownToExit = false;
         spriteNPC = GetComponentInChildren<SpriteRenderer>();
         animNPC = GetComponentInChildren<Animator>();
         colliderNPC = GetComponent<BoxCollider2D>();
@@ -43,6 +45,7 @@ public class Npc : MonoBehaviour
     {
         MoveNpc();
         DestroyNPC();
+        WaitRequest();
     }
 
     private void MoveNpc()
@@ -82,20 +85,37 @@ public class Npc : MonoBehaviour
         else
             wrongItem = true;
 
-
         m_RequestPopup.SetActive(false);
         m_Exit = true;
         m_Speed *= -1f;
         spriteNPC.sprite = spriteList[index];
         animNPC.speed = 1;
         colliderNPC.enabled = false;
-        //pts
     }
 
     //Change Npc speed
     public void SetSpeed(float _Value)
     {
         m_Speed = _Value;
+    }
+
+    private void WaitRequest()
+    {
+        if (m_StartCountDownToExit)
+        {
+            m_WaitLimit += 1f * Time.deltaTime;
+
+            if (m_WaitLimit >= 3f)
+            {
+                m_RequestPopup.SetActive(false);
+                m_Exit = true;
+                m_Speed *= -1f;
+                spriteNPC.sprite = spriteList[index];
+                animNPC.speed = 1;
+                colliderNPC.enabled = false;
+                m_StartCountDownToExit = false;
+            }
+        }
     }
 
     //NPC stop in balcony
@@ -108,6 +128,7 @@ public class Npc : MonoBehaviour
                 m_Start = false;
                 m_RequestPopup.SetActive(true);
                 animNPC.speed = 0;
+                m_StartCountDownToExit = true;
             }
         }
     }

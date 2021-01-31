@@ -12,6 +12,7 @@ public class WaveManager : MonoBehaviour
     [SerializeField] private string[] m_ItensColor;
     [SerializeField] private Transform[] m_SpawnNpc;
     [SerializeField] private GameObject[] m_ActiveNpcPlace;
+    [SerializeField] private Transform m_InactiveNpc;
     private int m_WaveCount;
     private float m_SpawnDelay;
     private bool m_StartGame;
@@ -71,6 +72,7 @@ public class WaveManager : MonoBehaviour
         if (m_ActiveNpcPlace[_NpcIndex].transform.childCount > 0)
         {
             m_ActiveNpcPlace[_NpcIndex].transform.GetChild(0).GetComponent<Npc>().TakeItem(_ItemName, _Color);
+            m_ActiveNpcPlace[_NpcIndex].transform.GetChild(0).transform.parent = m_InactiveNpc; //ADICIONEI ISSO, TESTAR SE Ñ BUGA 
             Destroy(_Item.gameObject);
         }
     }
