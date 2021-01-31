@@ -4067,6 +4067,7 @@ MonoBehaviour:
   - {fileID: 194114596}
   - {fileID: 5246741}
   - {fileID: 61171256}
+  m_InactiveNpc: {fileID: 0}
   m_WaveCount: 0
 --- !u!114 &1476447296
 MonoBehaviour:
@@ -5703,6 +5704,10 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 319361298}
+    - target: {fileID: 5102404335123572623, guid: b4a730b1da071434bba834eb914eb4fb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5102404335512087657, guid: b4a730b1da071434bba834eb914eb4fb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5795,9 +5800,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 5102404335850313893, guid: b4a730b1da071434bba834eb914eb4fb, type: 3}
+    - target: {fileID: 5102404336582527727, guid: b4a730b1da071434bba834eb914eb4fb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5565670667824472570, guid: b4a730b1da071434bba834eb914eb4fb, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
