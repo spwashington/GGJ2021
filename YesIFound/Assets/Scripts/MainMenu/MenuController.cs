@@ -6,6 +6,8 @@ public class MenuController : MonoBehaviour
 {
     public GameObject cam;
     public GameObject cam2;
+    public GameObject nextWaveText;
+
     public GameObject train;
     private Animator camAnim;
 
@@ -61,7 +63,6 @@ public class MenuController : MonoBehaviour
     {
         yield return new WaitForSeconds(6f);
         camAnim.SetBool("isStartCamera", true);
-        //Debug.Log("Play");
         waveManager.WaveStart();
         yield return null;
         camAnim.SetBool("isStartCamera", false);
@@ -69,12 +70,15 @@ public class MenuController : MonoBehaviour
 
     private IEnumerator CamTrigger2()
     {
+        nextWaveText.SetActive(true);
+        waveManager.m_StartGame = false;
+        waveManager.DestroyAllNpcs();
+        yield return new WaitForSeconds(6f);
         camAnim.SetBool("isStartCamera", true);
-        //Debug.Log("Play");
-        yield return new WaitForSeconds(4f);
-        waveManager.WaveReset();
+        waveManager.m_StartGame = true;
         yield return null;
         camAnim.SetBool("isStartCamera", false);
+        nextWaveText.SetActive(false);
     }
 
     public void ChangeMale()

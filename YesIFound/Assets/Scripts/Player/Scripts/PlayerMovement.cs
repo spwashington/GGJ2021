@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         isDashing = false;
         canDash = finishedDash = true;
+        m_AtribsSO.Gender = "Male";
     }
 
     void Update()

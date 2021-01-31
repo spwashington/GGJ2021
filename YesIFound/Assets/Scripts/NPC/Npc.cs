@@ -82,6 +82,7 @@ public class Npc : MonoBehaviour
         else
             m_HasFound = false;
 
+        m_WaveManager.DeleteChooseItems(m_SelectedItem[0], m_SelectedItem[1]);
         ReceivedItem(m_HasFound);
     }
 
@@ -114,14 +115,8 @@ public class Npc : MonoBehaviour
 
             if (m_WaitLimit >= 15f && !m_HasFound)
             {
+                m_WaveManager.DeleteChooseItems(m_SelectedItem[0], m_SelectedItem[1]);
                 ReceivedItem(m_HasFound);
-                m_RequestPopup.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = m_AngryFace;
-                m_Exit = true;
-                m_Speed *= -1f;
-                spriteNPC.sprite = spriteList[index];
-                animNPC.speed = 1;
-                colliderNPC.isTrigger = true;
-                m_StartCountDownToExit = false;
             }
         }
     }

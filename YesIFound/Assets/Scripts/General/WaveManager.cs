@@ -16,7 +16,7 @@ public class WaveManager : MonoBehaviour
     public ResetWave resetWave;
     public int m_WaveCount;
     private float m_SpawnDelay;
-    private bool m_StartGame;
+    public bool m_StartGame;
     private bool m_SinglePlayer;
     private int m_NumberOfItensInWave;
     private float m_WaveSpeed;
@@ -47,6 +47,7 @@ public class WaveManager : MonoBehaviour
 
         if (m_StartGame)
         {
+            ItemCheck();
             SpawnNpc();
         }
     }
@@ -54,6 +55,7 @@ public class WaveManager : MonoBehaviour
     //SPAWN NPCs Logic
     private void SpawnNpc()
     {
+
         m_SpawnDelay += 1f * Time.deltaTime;
 
         if (m_SpawnDelay > Random.Range(1f, 2f))
@@ -66,10 +68,15 @@ public class WaveManager : MonoBehaviour
                     {
                         if (m_ActiveNpcPlace[i].transform.childCount == 0)
                         {
-                            GameObject temp = Instantiate(m_NpcPrefab, m_SpawnNpc[i].position, Quaternion.identity);
-                            temp.transform.parent = m_ActiveNpcPlace[i].transform;
-                            m_SpawnDelay = 0f;
-                            break;
+                            if (m_Itens.childCount > 0)
+                            {
+                                GameObject temp = Instantiate(m_NpcPrefab, m_SpawnNpc[i].position, Quaternion.identity);
+                                temp.transform.parent = m_ActiveNpcPlace[i].transform;
+                                m_SpawnDelay = 0f;
+                                break;
+                            }
+
+                                
                         }
                     }
                 }
@@ -87,7 +94,7 @@ public class WaveManager : MonoBehaviour
         SpawnObjectsInWave(m_NumberOfItensInWave);
     }
 
-    private void DestroyAllNpcs()
+    public void DestroyAllNpcs()
     {
         for (int i = 0; i < m_ActiveNpcPlace.Length; i++)
         {
@@ -215,5 +222,30 @@ public class WaveManager : MonoBehaviour
         }
 
         m_StartGame = true;
+    }
+
+    void ItemCheck()
+    {
+        if(m_Itens.childCount == 0 && m_ItensChoosed.childCount == 0)
+        {
+            //if('tem vida?')
+            WaveReset();
+        }
+    }
+
+    public void DeleteChooseItems(string name, string color)
+    {
+        if(m_ItensChoosed.childCount > 0)
+        {
+            for(int i=0; i < m_ItensChoosed.childCount; i++)
+            {
+                if(m_ItensChoosed.GetChild(i).GetComponent<ItemGameplay>().GetName() == name && m_ItensChoosed.GetChild(i).GetComponent<ItemGameplay>().GetColor() == color)
+                {
+                    Destroy(m_ItensChoosed.GetChild(i).gameObject);
+                    break;
+                }
+                
+            }
+        }
     }
 }
