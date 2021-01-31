@@ -39,6 +39,7 @@ public class Npc : MonoBehaviour
         m_CanMove = true;
         m_SelectedItem = new string[2];
         m_RequestPopup = transform.GetChild(0).gameObject;
+        m_Speed = m_WaveManager.GetWaveSpeed();
         ChooseItem();
         RandomNPC();
     }
