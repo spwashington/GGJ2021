@@ -24,6 +24,8 @@ public class Npc : MonoBehaviour
     private int index;
     private Animator animNPC;
 
+    [SerializeField] Sprite m_HappyFace, m_AngryFace;
+
     private void Start()
     {
         m_WaitLimit = 0f;
@@ -81,11 +83,16 @@ public class Npc : MonoBehaviour
         bool wrongItem = false;
 
         if (m_SelectedItem[0] == _ItemNameRecived && m_SelectedItem[1] == _ItemRecivedColor)
+        {
             wrongItem = false;
+            m_RequestPopup.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = m_HappyFace;
+        }
         else
+        {
             wrongItem = true;
+            m_RequestPopup.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = m_AngryFace;
+        }
 
-        m_RequestPopup.SetActive(false);
         m_Exit = true;
         m_Speed *= -1f;
         spriteNPC.sprite = spriteList[index];
@@ -109,7 +116,7 @@ public class Npc : MonoBehaviour
 
             if (m_WaitLimit >= 15f)
             {
-                m_RequestPopup.SetActive(false);
+                m_RequestPopup.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = m_AngryFace;
                 m_Exit = true;
                 m_Speed *= -1f;
                 spriteNPC.sprite = spriteList[index];
