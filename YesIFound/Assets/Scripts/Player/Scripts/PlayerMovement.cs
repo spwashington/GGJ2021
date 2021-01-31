@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] PlayerAtribsSO m_AtribsSO;
 
+    public GameObject dashVFX;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -27,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
         if (canDash && m_AtribsSO.movement.normalized != Vector2.zero && Input.GetAxis(m_AtribsSO.DashButton) > 0)
         {
             StartCoroutine(DashControl());
+            Instantiate(dashVFX, gameObject.transform.position, Quaternion.identity);
         }
 
         if (Input.GetAxis(m_AtribsSO.DashButton) == 0 && finishedDash) canDash = true;
